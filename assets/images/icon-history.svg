@@ -1,0 +1,14 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <!-- Kamon-inspired floral mon used as the History pillar mark -->
+  <g stroke="#1a1a1a" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <!-- center disc -->
+    <circle cx="36" cy="36" r="6" fill="#1a1a1a" stroke="none"/>
+    <!-- six petals around the center -->
+    <path d="M36 12C32 18 32 25 36 30C40 25 40 18 36 12Z" fill="#1a1a1a"/>
+    <path d="M57 24C50 24 44 28 42 33C48 35 55 32 57 24Z" fill="#1a1a1a"/>
+    <path d="M57 48C50 48 44 44 42 39C48 37 55 40 57 48Z" fill="#1a1a1a"/>
+    <path d="M36 60C32 54 32 47 36 42C40 47 40 54 36 60Z" fill="#1a1a1a"/>
+    <path d="M15 48C22 48 28 44 30 39C24 37 17 40 15 48Z" fill="#1a1a1a"/>
+    <path d="M15 24C22 24 28 28 30 33C24 35 17 32 15 24Z" fill="#1a1a1a"/>
+  </g>
+</svg>

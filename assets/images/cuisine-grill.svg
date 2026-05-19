@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" role="img" aria-labelledby="title desc">
+  <title id="title">Japanese grilled dish illustration</title>
+  <desc id="desc">A stylized grill plate representing griddle and grilled dishes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef5ff"/>
+      <stop offset="100%" stop-color="#f4edf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="800" fill="url(#bg)"/>
+  <g transform="translate(72 188)">
+    <rect x="40" y="126" width="416" height="240" rx="28" fill="#162b4c"/>
+    <rect x="76" y="154" width="344" height="184" rx="18" fill="#2a476d"/>
+    <g stroke="#87bcfc" stroke-width="10" stroke-linecap="round" opacity="0.7">
+      <path d="M116 186h264"/>
+      <path d="M116 224h264"/>
+      <path d="M116 262h264"/>
+      <path d="M116 300h264"/>
+    </g>
+    <path d="M114 396h268" fill="none" stroke="#514054" stroke-width="22" stroke-linecap="round"/>
+    <g>
+      <ellipse cx="184" cy="244" rx="48" ry="34" fill="#e76f51"/>
+      <ellipse cx="292" cy="244" rx="58" ry="40" fill="#f4a261"/>
+      <ellipse cx="364" cy="216" rx="34" ry="24" fill="#7fb069"/>
+    </g>
+    <path d="M176 96c22 28 22 62 0 90" fill="none" stroke="#6f96df" stroke-width="14" stroke-linecap="round" opacity="0.75"/>
+    <path d="M286 82c18 24 18 54 0 82" fill="none" stroke="#6f96df" stroke-width="14" stroke-linecap="round" opacity="0.75"/>
+  </g>
+</svg>

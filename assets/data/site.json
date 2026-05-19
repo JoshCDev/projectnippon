@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "description": "Project: NIPPON menelusuri budaya Jepang melalui enam aspek utama: sejarah, seni, busana, kuliner, arsitektur, dan ritme musim, dari masa kuno hingga masa kini.",
+    "note": "Seluruh konten disajikan sebagai situs statis yang ringkas. Data tersimpan dalam berkas JSON, transisi dijaga lembut, dan tiap topik memiliki pola interaksinya sendiri.",
+    "themes": [
+      "Sejarah berlapis",
+      "Estetika hening",
+      "Rasa regional",
+      "Ritme modern"
+    ]
+  },
+  "intro": "Budaya Jepang terbentuk dari pertemuan banyak faktor: kepulauan yang terkurung laut, musim yang tegas, pengaruh dari Asia Timur, isolasi yang panjang, serta modernisasi yang berlangsung cepat. Hasilnya adalah tradisi yang teliti pada detail, peka terhadap ruang, dan terbiasa menyeimbangkan warisan dengan perubahan.",
+  "stats": [
+    {
+      "value": "4",
+      "label": "pulau utama",
+      "detail": "Honshu, Hokkaido, Kyushu, dan Shikoku merupakan empat pulau yang membentuk inti geografis Jepang."
+    },
+    {
+      "value": "47",
+      "label": "prefektur",
+      "detail": "Setiap prefektur memiliki cita rasa, festival, dan dialek yang khas, sehingga citra Jepang tidak pernah seragam."
+    },
+    {
+      "value": "8",
+      "label": "wilayah budaya",
+      "detail": "Pengelompokan regional membantu menjelaskan perbedaan karakter antara Hokkaido, Kansai, Kyushu, hingga Okinawa."
+    },
+    {
+      "value": "14k+",
+      "label": "tahun jejak budaya",
+      "detail": "Lapisan budaya Jepang terbentang dari komunitas Jomon hingga era Reiwa, dan tetap berlanjut hingga kini."
+    }
+  ],
+  "pillars": [
+    {
+      "title": "History",
+      "kicker": "Sejarah",
+      "description": "Perjalanan dari periode Jomon, istana Heian, era samurai, kota Edo, hingga Jepang modern.",
+      "link": "history.html",
+      "image": "assets/images/tile-castle.png",
+      "alt": "Kastil Jepang tradisional dengan atap genting berlapis",
+      "icon": "assets/images/icon-history.svg"
+    },
+    {
+      "title": "Seni & Musik",
+      "kicker": "Seni",
+      "description": "Kaligrafi, ukiyo-e, panggung Noh, taiko, hingga perkembangan musik kontemporer Jepang.",
+      "link": "art-music.html",
+      "image": "assets/images/tile-shamisen.png",
+      "alt": "Tangan memetik shamisen dalam kimono tradisional",
+      "icon": "assets/images/icon-art.svg"
+    },
+    {
+      "title": "Pakaian & Kuliner",
+      "kicker": "Rasa",
+      "description": "Kimono, ramen, dan kuliner per wilayah. Cara Jepang membaca musim, formalitas, dan kebersamaan di meja makan.",
+      "link": "clothing-culinary.html",
+      "image": "assets/images/tile-ramen-bowl.png",
+      "alt": "Semangkuk ramen dengan chashu, telur setengah matang, dan nori di atas meja kayu",
+      "icon": "assets/images/icon-clothing-culinary.svg"
+    },
+    {
+      "title": "Arsitektur",
+      "kicker": "Ruang",
+      "description": "Tatami, shoji, dan engawa membentuk ambang yang lembut antara ruang dalam dan alam di luar rumah.",
+      "link": "architecture.html",
+      "image": "assets/images/tile-temple-roof.png",
+      "alt": "Detail atap kayu kuil tradisional dengan pewarnaan vermilion dan genting hitam",
+      "icon": "assets/images/icon-architecture.svg"
+    },
+    {
+      "title": "Kuis",
+      "kicker": "Latihan",
+      "description": "Mode pilihan ganda untuk memeriksa pemahaman, dan kartu belajar untuk mengulang istilah inti.",
+      "link": "quiz.html",
+      "image": "",
+      "alt": "",
+      "icon": "assets/images/icon-quiz.svg"
+    }
+  ],
+  "previews": [
+    {
+      "title": "Linimasa dari Jomon ke Jepang modern",
+      "description": "Linimasa vertikal yang membaca pergeseran kekuasaan dari komunitas awal, istana, era samurai, kota dagang, hingga negara modern.",
+      "link": "history.html",
+      "cta": "Buka linimasa",
+      "image": "assets/images/great-wave.png",
+      "alt": "Cetakan ukiyo-e Great Wave karya Hokusai",
+      "tags": ["Linimasa", "Era", "Konteks"]
+    },
+    {
+      "title": "Galeri seni, panggung, dan instrumen",
+      "description": "Karya, pertunjukan, dan instrumen yang memperlihatkan keterkaitan antara seni rupa, panggung, dan bunyi dalam tradisi Jepang.",
+      "link": "art-music.html",
+      "cta": "Lihat galeri",
+      "image": "assets/images/japanese-arts.png",
+      "alt": "Penari Noh dalam kimono brokat di panggung tradisional",
+      "tags": ["Kategori", "Sorotan", "Catatan"]
+    },
+    {
+      "title": "Ragam busana dan peta rasa regional",
+      "description": "Pakaian tradisional dan masakan daerah memperlihatkan bagaimana musim, formalitas, dan letak geografis ikut membentuk kebiasaan harian.",
+      "link": "clothing-culinary.html",
+      "cta": "Telusuri busana & rasa",
+      "image": "assets/images/sushi-plate.png",
+      "alt": "Sajian sushi di atas piring keramik gelap",
+      "tags": ["Busana", "Wilayah", "Rasa"]
+    },
+    {
+      "title": "Eksplorasi rumah tradisional",
+      "description": "Tatami, fusuma, shoji, engawa, dan beragam tipe hunian dapat ditelusuri secara bertahap melalui satu eksplorer ruang yang ringkas.",
+      "link": "architecture.html",
+      "cta": "Masuk ke ruang tradisional",
+      "image": "assets/images/japanese-architecture.png",
+      "alt": "Ruang tatami terbuka ke taman Jepang lewat pintu geser kayu",
+      "tags": ["Elemen", "Denah", "Ruang"]
+    },
+    {
+      "title": "Mode kuis dan kartu belajar",
+      "description": "Mode pilihan ganda untuk memeriksa pemahaman, dan kartu belajar untuk mengulang istilah dengan ritme yang lebih ringan.",
+      "link": "quiz.html",
+      "cta": "Mulai latihan",
+      "image": "assets/images/zen-garden.png",
+      "alt": "Taman batu Zen dengan pasir putih yang disapu rapi",
+      "tags": ["Latihan", "Kartu", "Skor"]
+    }
+  ],
+  "quickFacts": [
+    "Hanami, matsuri, dan beragam ritual tahunan menunjukkan betapa eratnya budaya Jepang dengan pergantian musim.",
+    "Konsep ma, atau jeda yang disengaja, hadir dalam musik, panggung, tata ruang, hingga rangkaian bunga ikebana.",
+    "Tradisi fermentasi seperti miso, shoyu, dan sake memperlihatkan pentingnya proses yang lambat dalam budaya pangan Jepang.",
+    "Arsitektur kayu tradisional adalah jawaban terhadap iklim lembap, gempa, serta perubahan cahaya sepanjang hari.",
+    "Kimono dan yukata bukan sekadar busana, melainkan tanda yang membaca musim, suasana acara, dan tingkat formalitas.",
+    "Budaya populer Jepang masa kini banyak meminjam logika lama tentang panggung, citra, dan disiplin pertunjukan."
+  ],
+  "festivals": [
+    {
+      "name": "Hanami",
+      "detail": "tradisi menikmati mekarnya bunga sakura sebagai momen sosial sekaligus penanda peralihan musim semi."
+    },
+    {
+      "name": "Matsuri",
+      "detail": "festival lokal yang merekatkan komunitas melalui arak-arakan kuil, musik, dan simbol pelindung daerah setempat."
+    },
+    {
+      "name": "Shogatsu",
+      "detail": "perayaan tahun baru Jepang dengan hidangan simbolik, kunjungan ke kuil, dan ritme awal tahun yang dijaga rapi."
+    }
+  ],
+  "cta": {
+    "title": "Pilih sisi Jepang yang ingin didalami terlebih dahulu",
+    "text": "Sejarah dapat menjadi titik awal untuk memahami konteks besarnya. Halaman seni, kuliner, arsitektur, dan kuis tersedia bagi pembaca yang lebih nyaman menempuh jalur tematik."
+  }
+}

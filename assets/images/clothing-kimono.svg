@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" role="img" aria-labelledby="title desc">
+  <title id="title">Kimono illustration</title>
+  <desc id="desc">A stylized kimono on a calm blue background.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef5ff"/>
+      <stop offset="100%" stop-color="#d9e8fb"/>
+    </linearGradient>
+    <linearGradient id="garment" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#87bcfc"/>
+      <stop offset="100%" stop-color="#3375c3"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="800" fill="url(#bg)"/>
+  <circle cx="320" cy="132" r="54" fill="#162b4c" opacity="0.9"/>
+  <g transform="translate(140 180)">
+    <path d="M180 0 256 98 338 48 360 106 296 162 312 454 48 454 64 162 0 106 22 48 104 98 180 0Z" fill="url(#garment)"/>
+    <path d="M180 0 228 68 180 168 132 68 180 0Z" fill="#b1cffb" opacity="0.95"/>
+    <path d="M164 168h32v286h-32z" fill="#514054"/>
+    <rect x="106" y="208" width="148" height="92" rx="14" fill="#f7fbff" opacity="0.9"/>
+    <path d="M38 110c48 18 84 42 112 72" fill="none" stroke="#f7fbff" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+    <path d="M322 110c-48 18-84 42-112 72" fill="none" stroke="#f7fbff" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+    <circle cx="118" cy="276" r="12" fill="#514054" opacity="0.9"/>
+    <circle cx="180" cy="336" r="12" fill="#514054" opacity="0.9"/>
+    <circle cx="242" cy="276" r="12" fill="#514054" opacity="0.9"/>
+  </g>
+  <path d="M72 700c120-52 376-52 496 0" fill="none" stroke="#6f96df" stroke-width="20" stroke-linecap="round" opacity="0.35"/>
+</svg>

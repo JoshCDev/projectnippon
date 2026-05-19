@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" role="img" aria-labelledby="title desc">
+  <title id="title">Japanese bowl dish illustration</title>
+  <desc id="desc">A stylized bowl with steam for soups and rice dishes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#e6f1ff"/>
+    </linearGradient>
+    <linearGradient id="bowl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#514054"/>
+      <stop offset="100%" stop-color="#162b4c"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="800" fill="url(#bg)"/>
+  <g fill="none" stroke="#87bcfc" stroke-linecap="round" stroke-width="16" opacity="0.85">
+    <path d="M236 154c-20-34-18-74 8-112"/>
+    <path d="M320 150c-16-38-10-82 18-118"/>
+    <path d="M404 154c-10-30-6-62 12-92"/>
+  </g>
+  <g transform="translate(88 260)">
+    <ellipse cx="232" cy="212" rx="190" ry="144" fill="#ffffff" opacity="0.8"/>
+    <path d="M28 142h408c-14 130-98 220-204 220S42 272 28 142Z" fill="url(#bowl)"/>
+    <path d="M56 154c22 98 86 162 176 162s154-64 176-162" fill="none" stroke="#b1cffb" stroke-width="12" opacity="0.45"/>
+    <ellipse cx="232" cy="140" rx="204" ry="70" fill="#f6f9fe" stroke="#6f96df" stroke-width="10"/>
+    <circle cx="166" cy="126" r="20" fill="#f4a261"/>
+    <circle cx="252" cy="114" r="18" fill="#7fb069"/>
+    <circle cx="320" cy="132" r="16" fill="#e76f51"/>
+  </g>
+</svg>
