@@ -11,10 +11,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20260520-7">
-  <script src="assets/js/main.js?v=20260520-7" defer></script>
+  <link rel="stylesheet" href="assets/css/style.css?v=20260520-9">
+  <link rel="stylesheet" href="assets/css/history.css?v=20260613-5">
+  <script src="assets/js/main.js?v=20260520-9" defer></script>
+  <script src="assets/js/history.js?v=20260613-5" defer></script>
 </head>
-<body>
+<body data-page="history">
   <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
   <header class="site-header">
     <div class="container nav-shell">
@@ -34,16 +36,87 @@
     </div>
   </header>
 
-  <main id="main-content">
-    <section class="page-placeholder">
-      <div class="container page-placeholder-shell">
-        <span class="eyebrow">Sejarah</span>
-        <h1 class="page-placeholder-title">Halaman ini sedang dalam <span>persiapan</span>.</h1>
-        <p class="lead">Konten sejarah akan dipasang di sini. Sementara ini, kembali ke beranda untuk menjelajah pilar budaya lainnya.</p>
-        <div class="button-row">
-          <a class="button" href="index.html">Kembali ke beranda</a>
+  <main id="main-content" class="history-page" data-history-root>
+    <div class="history-bg" data-history-bg aria-hidden="true">
+      <div class="history-bg-layer history-bg-layer--from"></div>
+      <div class="history-bg-layer history-bg-layer--phase1" data-phase="desaturate"></div>
+      <div class="history-bg-layer history-bg-layer--phase2" data-phase="sweep"></div>
+    </div>
+
+    <section class="history-timeline" aria-label="Linimasa sejarah" data-history-timeline>
+      <div class="container">
+        <!-- Slider Tahun/Era -->
+        <div class="history-slider-row">
+          <button class="history-slider-arrow history-slider-arrow--left"
+                  type="button"
+                  aria-label="Periode sebelumnya"
+                  data-slider-prev="year-range">&#8249;</button>
+          <div class="history-slider history-slider--years"
+               data-slider="year-range"
+               data-history-year-range-slider>
+            <div class="history-slider-track" data-slider-track></div>
+            <div class="history-slider-stops" data-slider-stops aria-hidden="true"></div>
+            <div class="history-slider-thumb"
+                 role="slider"
+                 tabindex="0"
+                 aria-label="Periode sejarah Jepang"
+                 aria-valuemin="0"
+                 data-slider-thumb>
+              <span class="history-slider-thumb-line" aria-hidden="true"></span>
+              <span class="history-slider-thumb-label" data-slider-thumb-label></span>
+            </div>
+          </div>
+          <button class="history-slider-arrow history-slider-arrow--right"
+                  type="button"
+                  aria-label="Periode berikutnya"
+                  data-slider-next="year-range">&#8250;</button>
+          <label class="history-era-dropdown" data-history-era-dropdown>
+            <span class="history-era-dropdown-label">Periode</span>
+            <select data-history-era-select></select>
+          </label>
+        </div>
+
+        <!-- Slider Penanda Waktu (Bulan/Tahun) -->
+        <div class="history-slider-row history-slider-row--markers">
+          <button class="history-slider-arrow history-slider-arrow--left"
+                  type="button"
+                  aria-label="Penanda sebelumnya"
+                  data-slider-prev="time-marker">&#8249;</button>
+          <div class="history-slider history-slider--markers"
+               data-slider="time-marker"
+               data-history-time-marker-slider>
+            <div class="history-slider-track" data-slider-track></div>
+            <div class="history-slider-stops" data-slider-stops aria-hidden="true"></div>
+            <!-- Label bulan/tahun: posisi mengikuti thumb secara horizontal,
+                 ditempatkan di area padding atas slider (tidak ke atas slider era) -->
+            <span class="history-marker-label" data-slider-marker-label aria-hidden="true"></span>
+            <div class="history-slider-thumb"
+                 role="slider"
+                 tabindex="0"
+                 aria-label="Tanda waktu peristiwa"
+                 aria-valuemin="0"
+                 data-slider-thumb>
+              <span class="history-slider-thumb-line" aria-hidden="true"></span>
+            </div>
+          </div>
+          <button class="history-slider-arrow history-slider-arrow--right"
+                  type="button"
+                  aria-label="Penanda berikutnya"
+                  data-slider-next="time-marker">&#8250;</button>
         </div>
       </div>
+    </section>
+
+    <div class="history-timeline-spacer" data-history-timeline-spacer aria-hidden="true"></div>
+
+    <section class="history-content container" data-history-content>
+      <header class="history-content-head">
+        <span class="eyebrow" data-history-eyebrow></span>
+        <h1 class="page-placeholder-title" data-history-title></h1>
+        <p class="lead" data-history-intro></p>
+      </header>
+      <div class="history-content-events" data-history-events></div>
+      <p class="history-live" aria-live="polite" data-history-live></p>
     </section>
   </main>
 

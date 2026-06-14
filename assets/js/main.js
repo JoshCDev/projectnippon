@@ -1,7 +1,7 @@
 ﻿(() => {
   "use strict";
 
-  const APP_VERSION = "20260520-5";
+  const APP_VERSION = "20260520-9";
 
   const utils = {
     qs(selector, scope = document) {

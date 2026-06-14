@@ -1,0 +1,19 @@
+{
+  "name": "projectnippon",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Project: NIPPON - static site exploring Japanese culture.",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fast-check": "^4.8.0",
+    "jsdom": "^25.0.1",
+    "vitest": "^4.1.7"
+  }
+}

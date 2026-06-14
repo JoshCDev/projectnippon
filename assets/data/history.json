@@ -1,0 +1,657 @@
+{
+  "_source": "assets/data/Rangkuman Sejarah Jepang Berbasis Timeline.pdf",
+  "page": {
+    "eyebrow": "Linimasa",
+    "title": "Sejarah Jepang dalam lapisan waktu",
+    "intro": "Geser bilah era di atas untuk berpindah zaman, lalu pilih bulan pada bilah penanda waktu untuk membuka peristiwa pentingnya. Latar halaman akan ikut bergeser mengikuti suasana cerita yang sedang ditampilkan.",
+    "emptyStateTitle": "Belum ada peristiwa pada pilihan ini",
+    "emptyStateBody": "Pilih era atau bulan lain pada bilah linimasa untuk melihat peristiwa yang tersedia.",
+    "loadErrorMessage": "Konten sejarah belum dapat dimuat. Pastikan situs dijalankan lewat server lokal.",
+    "loadingMessage": "Memuat linimasa sejarah...",
+    "placeholderBadge": "Konten contoh",
+    "selectionAnnouncementTemplate": "Era {yearRange}, {month} {year}",
+    "monthNames": [
+      "Januari",
+      "Februari",
+      "Maret",
+      "April",
+      "Mei",
+      "Juni",
+      "Juli",
+      "Agustus",
+      "September",
+      "Oktober",
+      "November",
+      "Desember"
+    ]
+  },
+  "defaultYearRangeId": "yamato",
+  "yearRanges": [
+    {
+      "id": "yamato",
+      "label": "Zaman Kuno / Yamato",
+      "from": -10000,
+      "to": 538,
+      "mood": "casual"
+    },
+    {
+      "id": "asuka",
+      "label": "Periode Asuka",
+      "from": 538,
+      "to": 710,
+      "mood": "sacred"
+    },
+    {
+      "id": "nara",
+      "label": "Periode Nara",
+      "from": 710,
+      "to": 794,
+      "mood": "sacred"
+    },
+    {
+      "id": "heian",
+      "label": "Periode Heian",
+      "from": 794,
+      "to": 1185,
+      "mood": "positive"
+    },
+    {
+      "id": "kamakura",
+      "label": "Periode Kamakura",
+      "from": 1185,
+      "to": 1333,
+      "mood": "dark"
+    },
+    {
+      "id": "muromachi-azuchi-momoyama",
+      "label": "Periode Muromachi / Sengoku / Azuchi-Momoyama",
+      "from": 1336,
+      "to": 1603,
+      "mood": "negative"
+    },
+    {
+      "id": "edo",
+      "label": "Periode Edo",
+      "from": 1603,
+      "to": 1868,
+      "mood": "casual"
+    },
+    {
+      "id": "meiji",
+      "label": "Era Meiji",
+      "from": 1868,
+      "to": 1912,
+      "mood": "positive"
+    },
+    {
+      "id": "taisho-showa-awal",
+      "label": "Era Taisho dan Showa Awal",
+      "from": 1912,
+      "to": 1945,
+      "mood": "dark"
+    },
+    {
+      "id": "pendudukan-sekutu",
+      "label": "Era Pendudukan Sekutu",
+      "from": 1945,
+      "to": 1952,
+      "mood": "positive"
+    },
+    {
+      "id": "kontemporer",
+      "label": "Era Kontemporer",
+      "from": 1989,
+      "to": 2025,
+      "mood": "negative"
+    }
+  ],
+  "events": [
+    {
+      "id": "evt-yamato-jomon",
+      "yearRangeId": "yamato",
+      "year": -5000,
+      "title": "Budaya Jomon dan tembikar bermotif tali",
+      "body": "Masyarakat Jomon hidup sebagai pemburu-pengumpul di permukiman semi-permanen. Mereka mengembangkan tembikar bermotif tali yang khas dan praktik animisme awal yang kelak menjadi akar kepercayaan kepulauan Jepang.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-yamato-jimmu",
+      "yearRangeId": "yamato",
+      "year": -660,
+      "title": "Pendirian legendaris dinasti Kaisar Jimmu",
+      "body": "Menurut mitologi, Kaisar Jimmu yang merupakan keturunan langsung Dewi Matahari Amaterasu mendirikan dinasti kekaisaran pertama. Klaim keturunan ilahi ini menjadi fondasi legitimasi teokratis kekaisaran Jepang selama berabad-abad.",
+      "mood": "sacred"
+    },
+    {
+      "id": "evt-yamato-yayoi",
+      "yearRangeId": "yamato",
+      "year": -300,
+      "title": "Periode Yayoi dan budidaya padi sawah",
+      "body": "Introduksi budidaya padi sawah basah, roda pembuat tembikar, serta teknologi peleburan perunggu dan besi tiba dari daratan Tiongkok dan Korea. Pertanian padi yang menuntut irigasi komunal memicu spesialisasi tenaga kerja dan stratifikasi kelas sosial pertama.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-yamato-kofun",
+      "yearRangeId": "yamato",
+      "year": 250,
+      "title": "Periode Kofun dan konsolidasi Pengadilan Yamato",
+      "body": "Pemimpin klan Kansai modern membangun gundukan makam raksasa (kofun) sebagai simbol kekuasaan. Otoritas Pengadilan Yamato mulai diakui sebagai konfederasi dominan atas klan-klan uji lainnya, menggabungkan kekuatan militer dan klaim supremasi keagamaan.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-asuka-538-buddhism",
+      "yearRangeId": "asuka",
+      "year": 538,
+      "title": "Pengenalan Buddhisme dari Baekje",
+      "body": "Agama Buddha diperkenalkan secara resmi dari kerajaan Baekje di Korea ke Pengadilan Yamato. Kedatangan ajaran baru ini memicu konflik berdarah antara klan Soga yang pro-Buddha dengan klan Mononobe dan Nakatomi yang konservatif Shinto.",
+      "mood": "sacred"
+    },
+    {
+      "id": "evt-asuka-587-soga",
+      "yearRangeId": "asuka",
+      "year": 587,
+      "title": "Klan Soga mengalahkan klan Mononobe",
+      "body": "Soga no Umako memimpin pasukan Soga meraih kemenangan militer atas klan Mononobe. Kemenangan ini mengukuhkan Buddhisme sebagai alat legitimasi politik negara dan membuka jalan bagi adopsi struktur peradaban benua.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-asuka-604-shotoku",
+      "yearRangeId": "asuka",
+      "year": 604,
+      "title": "Konstitusi 17 Pasal Pangeran Shotoku",
+      "body": "Pangeran Shotoku merumuskan Konstitusi 17 Pasal yang berlandaskan prinsip Konfusianisme dan Buddhisme. Dokumen ini menekankan harmoni sosial (wa) dan kepatuhan mutlak kepada kaisar sebagai poros tatanan negara.",
+      "mood": "sacred"
+    },
+    {
+      "id": "evt-asuka-645-taika",
+      "yearRangeId": "asuka",
+      "year": 645,
+      "month": 7,
+      "title": "Reformasi Taika dan Insiden Isshi",
+      "body": "Pangeran Naka no Oe dan Nakatomi no Kamatari membunuh pemimpin de facto Soga no Iruka dalam kudeta istana. Ratu Kogyoku turun takhta, Kaisar Kotoku naik, dan Reformasi Taika diluncurkan untuk mensentralisasi kekuasaan kekaisaran.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-asuka-646-dekrit",
+      "yearRangeId": "asuka",
+      "year": 646,
+      "month": 1,
+      "title": "Dekrit Reformasi Taika diberlakukan",
+      "body": "Kaisar secara resmi menghapus kepemilikan tanah pribadi dan sistem hamba sahaya. Seluruh tanah dan rakyat dinyatakan sebagai milik negara, lalu sistem sensus populasi dan redistribusi tanah dijalankan mengikuti model Dinasti Tang.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-nara-710-heijokyo",
+      "yearRangeId": "nara",
+      "year": 710,
+      "title": "Pendirian ibu kota Heijo-kyo (Nara)",
+      "body": "Jepang untuk pertama kalinya mendirikan ibu kota permanen di Heijo-kyo, sebuah kota yang dirancang simetris meniru tata letak Chang'an. Sistem hukum Taiho dan Asuka Kiyomihara diterapkan secara penuh sebagai tulang punggung administrasi Ritsuryo.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-nara-712-kojiki",
+      "yearRangeId": "nara",
+      "year": 712,
+      "title": "Kompilasi Kojiki diselesaikan",
+      "body": "Kojiki, kronik tertua yang diketahui di Jepang, dirampungkan sebagai proyek negara. Naskah ini menyusun mitologi dan silsilah kaisar untuk melegitimasi garis keturunan ilahi kekaisaran dalam format teks tertulis terstruktur.",
+      "mood": "sacred"
+    },
+    {
+      "id": "evt-nara-720-nihonshoki",
+      "yearRangeId": "nara",
+      "year": 720,
+      "title": "Penyelesaian Nihon Shoki",
+      "body": "Kronik resmi kedua, Nihon Shoki, diselesaikan dalam aksara Tionghoa klasik. Dokumen ini menjadi sejarah resmi negara yang dipersembahkan kepada istana untuk memperkuat pandangan dunia kekaisaran berbasis garis keturunan ilahi.",
+      "mood": "sacred"
+    },
+    {
+      "id": "evt-nara-752-daibutsu",
+      "yearRangeId": "nara",
+      "year": 752,
+      "title": "Patung Buddha raksasa Todai-ji diresmikan",
+      "body": "Kaisar Shomu mendanai dan menyelesaikan pembangunan patung Buddha perunggu raksasa (Daibutsu) di kuil Todai-ji. Proyek monumental ini memperkuat status Buddhisme sebagai agama negara namun menguras perbendaharaan kerajaan secara ekstrem.",
+      "mood": "sacred"
+    },
+    {
+      "id": "evt-nara-760-manyoshu",
+      "yearRangeId": "nara",
+      "year": 760,
+      "title": "Penyelesaian antologi puisi Man'yoshu",
+      "body": "Man'yoshu, antologi puisi pertama Jepang, dirampungkan dengan menggunakan sistem tulisan fonetik awal man'yogana. Antologi ini merangkum karya dari kaisar hingga penjaga perbatasan dan menjadi monumen lirik klasik kepulauan.",
+      "mood": "positive"
+    },
+    {
+      "id": "evt-nara-784-nagaoka",
+      "yearRangeId": "nara",
+      "year": 784,
+      "month": 11,
+      "title": "Pemindahan ibu kota ke Nagaoka-kyo",
+      "body": "Kaisar memindahkan ibu kota dari Nara ke Nagaoka sebagai upaya melarikan diri dari pengaruh politik para pendeta Buddha yang semakin absolut. Pemindahan ini menjadi langkah awal menuju pendirian Heian-kyo satu dekade kemudian.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-heian-794-heiankyo",
+      "yearRangeId": "heian",
+      "year": 794,
+      "month": 3,
+      "title": "Pemindahan ibu kota ke Heian-kyo",
+      "body": "Kaisar Kanmu memindahkan pusat pemerintahan ke Heian-kyo, kota yang kelak dikenal sebagai Kyoto. Pemindahan ini menjauhkan istana dari kuil Buddha Nara yang korup dan menandai dimulainya era keemasan kebudayaan istana klasik.",
+      "mood": "sacred"
+    },
+    {
+      "id": "evt-heian-806-shingon",
+      "yearRangeId": "heian",
+      "year": 806,
+      "title": "Sekte Shingon dan Tendai berdiri",
+      "body": "Biksu Saicho memperkenalkan sekte Tendai dan Kukai memperkenalkan sekte esoteris Shingon dari Tiongkok. Kedua sekte yang lebih mistis ini disukai oleh kaum aristokrat Heian dan membentuk lanskap keagamaan istana klasik.",
+      "mood": "sacred"
+    },
+    {
+      "id": "evt-heian-858-fujiwara",
+      "yearRangeId": "heian",
+      "year": 858,
+      "title": "Dominasi Klan Fujiwara dimulai",
+      "body": "Kaisar Seiwa naik takhta dan Fujiwara no Yoshifusa membuka era dominasi absolut Klan Fujiwara. Mereka menguasai pemerintahan melalui politik perkawinan sedarah dengan keluarga kekaisaran serta institusi Bupati Sessho dan Kampaku.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-heian-895-tang-end",
+      "yearRangeId": "heian",
+      "year": 895,
+      "title": "Penghentian misi kedutaan ke Tiongkok",
+      "body": "Sugawara no Michizane secara resmi menghentikan misi kedutaan ke Dinasti Tang yang sedang runtuh. Putusnya hubungan diplomatik ini memicu era pribumisasi budaya secara masif, termasuk penciptaan aksara kana yang khas Jepang.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-heian-1010-genji",
+      "yearRangeId": "heian",
+      "year": 1010,
+      "title": "Murasaki Shikibu menyelesaikan Hikayat Genji",
+      "body": "Hikayat Genji yang ditulis Murasaki Shikibu di lingkaran istana dianggap sebagai novel psikologis pertama di dunia. Karya ini merangkum estetika mono no aware, intrik istana Heian, dan puncak sastra prosa vernakular dengan aksara hiragana.",
+      "mood": "positive"
+    },
+    {
+      "id": "evt-heian-1185-dannoura",
+      "yearRangeId": "heian",
+      "year": 1185,
+      "month": 4,
+      "title": "Pertempuran Dan-no-ura mengakhiri klan Taira",
+      "body": "Pertempuran laut final di Selat Shimonoseki menutup Perang Genpei. Klan Taira dikalahkan secara mutlak, kaisar muda Antoku tenggelam bersama regalia, dan hegemoni bangsawan Heian runtuh digantikan kelas samurai pimpinan klan Minamoto.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-kamakura-1192-shogun",
+      "yearRangeId": "kamakura",
+      "year": 1192,
+      "title": "Minamoto no Yoritomo menjadi Shogun",
+      "body": "Kaisar Go-Toba secara resmi menganugerahkan gelar Seii Taishogun kepada Minamoto no Yoritomo. Penganugerahan ini melegitimasi pemerintahan militer Bakufu yang berbasis di Kamakura, menjauhkan kekuasaan dari pengaruh istana Kyoto.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-kamakura-1199-hojo",
+      "yearRangeId": "kamakura",
+      "year": 1199,
+      "title": "Klan Hojo merebut kekuasaan de facto",
+      "body": "Setelah kematian Yoritomo, kekuasaan de facto direbut oleh keluarga istrinya, Klan Hojo. Mereka memerintah sebagai dewan wali (Shikken) dari balik layar dan memanipulasi figur shogun boneka selama lebih dari satu abad.",
+      "mood": "negative"
+    },
+    {
+      "id": "evt-kamakura-1221-jokyu",
+      "yearRangeId": "kamakura",
+      "year": 1221,
+      "title": "Pemberontakan Jokyu dihancurkan",
+      "body": "Pasukan kekaisaran Kyoto mencoba merebut kembali kekuasaan dari Kamakura tetapi dihancurkan dengan cepat. Bakufu menyita ribuan lahan bangsawan dan membagikannya kepada samurai, memperkuat sistem feodalisme di kepulauan.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-kamakura-1227-zen",
+      "yearRangeId": "kamakura",
+      "year": 1227,
+      "title": "Buddhisme Zen Soto diperkenalkan",
+      "body": "Biksu Dogen memperkenalkan Buddhisme Zen Soto dari Tiongkok. Aliran ini menekankan duduk meditasi (zazen) dan disiplin yang beresonansi kuat dengan nilai-nilai militer samurai, sehingga cepat berakar di kalangan ksatria Kamakura.",
+      "mood": "sacred"
+    },
+    {
+      "id": "evt-kamakura-1274-mongol",
+      "yearRangeId": "kamakura",
+      "year": 1274,
+      "title": "Invasi Mongol pertama",
+      "body": "Kubilai Khan mengirimkan armada raksasa untuk menaklukkan Jepang. Pertahanan samurai dibantu oleh angin topan katastropik yang menenggelamkan banyak kapal Mongol, membatalkan ambisi penaklukan namun menguras keuangan Bakufu.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-kamakura-1281-kamikaze",
+      "yearRangeId": "kamakura",
+      "year": 1281,
+      "title": "Invasi Mongol kedua dan Kamikaze",
+      "body": "Armada kedua Kubilai Khan kembali dihantam topan dahsyat yang dijuluki Kamikaze atau angin dewa. Penyelamatan ajaib ini memperkuat keyakinan ilahi atas kepulauan Jepang, sekaligus meninggalkan beban fiskal yang berat bagi para samurai.",
+      "mood": "sacred"
+    },
+    {
+      "id": "evt-kamakura-1333-fall",
+      "yearRangeId": "kamakura",
+      "year": 1333,
+      "title": "Kejatuhan Keshogunan Kamakura",
+      "body": "Pemberontakan yang dipimpin Kaisar Go-Daigo dan pembelotan jenderal-jenderal lokal yang terlilit krisis ekonomi menumbangkan Bakufu. Kejatuhan Kamakura mengakhiri eksperimen pertama pemerintahan militer yang berdiri sendiri di luar Kyoto.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-muromachi-1467-onin",
+      "yearRangeId": "muromachi-azuchi-momoyama",
+      "year": 1467,
+      "title": "Perang Onin mengubur otoritas Ashikaga",
+      "body": "Perang suksesi yang berlarut-larut menghancurkan ibu kota Kyoto dan meruntuhkan otoritas Keshogunan Ashikaga secara de facto. Jepang pecah menjadi ratusan kadipaten independen yang diperintah para Daimyo, membuka Periode Sengoku.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-muromachi-1543-tanegashima",
+      "yearRangeId": "muromachi-azuchi-momoyama",
+      "year": 1543,
+      "month": 8,
+      "title": "Senjata api Portugis tiba di Tanegashima",
+      "body": "Tiga pedagang Portugis terdampar di pantai Tanegashima dan membawa senjata api laras panjang (arquebus) pertama ke Jepang. Senjata yang disebut tanegashima ini segera mengubah taktik perang, arsitektur kastil, dan tata kelas sosial militer.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-muromachi-1549-jesuits",
+      "yearRangeId": "muromachi-azuchi-momoyama",
+      "year": 1549,
+      "title": "Misionaris Yesuit memperkenalkan Katolik",
+      "body": "Fransiskus Xaverius dan misi Yesuit memperkenalkan Katolik Roma ke Jepang. Beberapa daimyo secara oportunis memeluk Kristen guna mengamankan jalur perdagangan senjata api dan bubuk mesiu dari Portugis.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-muromachi-1560-okehazama",
+      "yearRangeId": "muromachi-azuchi-momoyama",
+      "year": 1560,
+      "month": 6,
+      "title": "Pertempuran Okehazama melontarkan Nobunaga",
+      "body": "Oda Nobunaga dengan pasukan kecil melakukan serangan kejutan di tengah badai dan membantai faksi Imagawa Yoshimoto yang jauh lebih besar. Kemenangan ini melontarkan klan Oda sebagai hegemon menuju penyatuan Jepang.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-muromachi-1571-hieizan",
+      "yearRangeId": "muromachi-azuchi-momoyama",
+      "year": 1571,
+      "title": "Pembakaran kompleks kuil Gunung Hiei",
+      "body": "Oda Nobunaga membakar kompleks kuil Gunung Hiei dan membantai ribuan biksu prajurit (sohei). Tindakan brutal ini menghilangkan ancaman keagamaan terhadap otoritas sekulernya dan menegaskan supremasi negara atas institusi Buddha.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-muromachi-1575-nagashino",
+      "yearRangeId": "muromachi-azuchi-momoyama",
+      "year": 1575,
+      "title": "Pertempuran Nagashino dan revolusi voli arquebus",
+      "body": "Pasukan Oda Nobunaga dan Tokugawa Ieyasu menggunakan taktik tembakan voli beruntun dengan ribuan arquebus dari balik palisade kayu. Mereka menghancurkan kavaleri Takeda dan menandai revolusi modern dalam doktrin pertempuran Jepang.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-muromachi-1582-honnoji",
+      "yearRangeId": "muromachi-azuchi-momoyama",
+      "year": 1582,
+      "month": 6,
+      "title": "Insiden Honno-ji: pengkhianatan terhadap Nobunaga",
+      "body": "Oda Nobunaga dikhianati oleh jenderalnya Akechi Mitsuhide dan tewas saat dikepung di kuil Honno-ji di Kyoto. Pengkhianatan ini mematahkan misi penyatuan Nobunaga dan membuka jalan bagi naiknya pengaruh Toyotomi Hideyoshi.",
+      "mood": "negative"
+    },
+    {
+      "id": "evt-muromachi-1582-hideyoshi",
+      "yearRangeId": "muromachi-azuchi-momoyama",
+      "year": 1582,
+      "month": 6,
+      "title": "Toyotomi Hideyoshi melanjutkan penyatuan",
+      "body": "Tak lama setelah Insiden Honno-ji, jenderal berlatar belakang petani Toyotomi Hideyoshi mengalahkan Akechi Mitsuhide dan mengambil alih misi penyatuan. Ia kelak membekukan mobilitas kelas sosial dan menyita senjata dari kelas non-samurai.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-muromachi-1600-sekigahara",
+      "yearRangeId": "muromachi-azuchi-momoyama",
+      "year": 1600,
+      "month": 10,
+      "title": "Pertempuran Sekigahara",
+      "body": "Pasukan Timur pimpinan Tokugawa Ieyasu menghancurkan Pasukan Barat yang loyal kepada penerus Toyotomi. Pertempuran terbesar dalam sejarah Jepang ini mengakhiri kekacauan Sengoku dan membuka jalan bagi Keshogunan Tokugawa.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-edo-1603-shogun",
+      "yearRangeId": "edo",
+      "year": 1603,
+      "month": 3,
+      "title": "Tokugawa Ieyasu diangkat menjadi Shogun",
+      "body": "Tokugawa Ieyasu menerima gelar Shogun dan meresmikan Keshogunan Tokugawa dari ibu kota administratif baru, Edo. Sistem Bakuhan menyusun hierarki kontrol pusat atas sekitar 300 klan daerah yang semi-otonom.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-edo-1614-osaka-winter",
+      "yearRangeId": "edo",
+      "year": 1614,
+      "title": "Pengepungan musim dingin Kastil Osaka",
+      "body": "Tokugawa Ieyasu memimpin pengepungan musim dingin terhadap Kastil Osaka untuk melumpuhkan klan Toyotomi yang masih bertahan di balik benteng raksasa. Gencatan senjata yang menyusul memaksa parit luar kastil ditimbun, sehingga pertahanan Toyotomi melemah menjelang serangan musim panas tahun berikutnya.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-edo-1615-osaka",
+      "yearRangeId": "edo",
+      "year": 1615,
+      "title": "Pengepungan musim panas Kastil Osaka",
+      "body": "Pengepungan musim panas mengakhiri perlawanan klan Toyotomi. Toyotomi Hideyori tewas dan ancaman terakhir terhadap hegemoni Tokugawa dieliminasi sepenuhnya, membuka tatanan Pax Tokugawa selama lebih dari dua setengah abad.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-edo-1635-sakoku",
+      "yearRangeId": "edo",
+      "year": 1635,
+      "title": "Dekrit Sakoku menutup Jepang dari dunia luar",
+      "body": "Shogun Iemitsu mengeluarkan dekrit Sakoku yang menutup Jepang dari dunia luar. Kekristenan dilarang, rakyat dilarang pergi ke luar negeri, dan pedagang Barat diusir kecuali Belanda yang dikarantina di Dejima, Nagasaki.",
+      "mood": "negative"
+    },
+    {
+      "id": "evt-edo-1657-meireki",
+      "yearRangeId": "edo",
+      "year": 1657,
+      "month": 3,
+      "title": "Kebakaran Besar Meireki melumat Edo",
+      "body": "Kebakaran Besar Meireki menelan sebagian besar kota Edo termasuk donjon utama Kastil Edo dan menewaskan puluhan ribu jiwa. Bencana ini memaksa Bakufu menata ulang pola kota dengan jalur api, kanal, dan distrik kayu yang lebih lapang sebagai cikal bakal Edo modern.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-edo-1854-kanagawa",
+      "yearRangeId": "edo",
+      "year": 1854,
+      "month": 3,
+      "title": "Perjanjian Kanagawa membuka isolasi",
+      "body": "Di bawah tekanan armada Komodor Matthew Perry, Jepang menandatangani Perjanjian Kanagawa dengan Amerika Serikat. Lebih dari dua abad isolasi resmi berakhir, pelabuhan dibuka bagi Barat, dan legitimasi Bakufu mulai goyah.",
+      "mood": "negative"
+    },
+    {
+      "id": "evt-meiji-1868-restorasi",
+      "yearRangeId": "meiji",
+      "year": 1868,
+      "month": 1,
+      "title": "Restorasi Meiji dimulai",
+      "body": "Pasukan dari klan Satsuma menguasai gerbang istana Kyoto dini hari. Dekrit kekaisaran mengumumkan kembalinya aturan kaisar dan pelucutan paksa Keshogunan Tokugawa, memicu Perang Boshin antara loyalis Shogun dan tentara pro-Kaisar.",
+      "mood": "positive"
+    },
+    {
+      "id": "evt-meiji-1868-charter",
+      "yearRangeId": "meiji",
+      "year": 1868,
+      "month": 4,
+      "title": "Sumpah Lima Pasal diresmikan",
+      "body": "Kaisar Mutsuhito meresmikan Sumpah Lima Pasal (Charter Oath). Dokumen ini menyatakan bahwa pengetahuan akan dicari di seluruh dunia untuk memperkuat fondasi kekaisaran serta menjanjikan asimilasi antara kelas penguasa militer dan rakyat.",
+      "mood": "positive"
+    },
+    {
+      "id": "evt-meiji-1873-feodalisme",
+      "yearRangeId": "meiji",
+      "year": 1873,
+      "title": "Abolisi feodalisme dan wajib militer modern",
+      "body": "Domain otonom regional dibubarkan menjadi sistem prefektur yang dikendalikan gubernur pusat. Hak hierarkis, gaji keturunan kelas samurai, dan monopoli pedang dilarang, sementara tentara wajib militer modern yang diisi rakyat jelata dibentuk.",
+      "mood": "positive"
+    },
+    {
+      "id": "evt-meiji-1889-konstitusi",
+      "yearRangeId": "meiji",
+      "year": 1889,
+      "title": "Konstitusi Meiji ditetapkan",
+      "body": "Ito Hirobumi menyusun Konstitusi Meiji bermodel Prusia. Konstitusi ini mendirikan parlemen terpilih sekaligus memusatkan kekuatan tak tersentuh pada otoritas kaisar, dan State Shinto diresmikan sebagai dasar agama kenegaraan.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-meiji-1894-sino-japanese",
+      "yearRangeId": "meiji",
+      "year": 1894,
+      "title": "Perang Tiongkok-Jepang Pertama",
+      "body": "Di bawah semboyan Negara Kaya Tentara Kuat, Jepang memenangi Perang Tiongkok-Jepang Pertama. Kemenangan luar biasa ini mengamankan Taiwan dan kepentingan dominan atas Korea, mengangkat Jepang ke jajaran kekuatan imperialis modern.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-meiji-1904-russo-japanese",
+      "yearRangeId": "meiji",
+      "year": 1904,
+      "title": "Perang Rusia-Jepang",
+      "body": "Jepang mengalahkan Kekaisaran Rusia dalam perang darat dan laut yang sengit. Kemenangan ini mengejutkan dunia Barat, mengukuhkan Jepang sebagai kekuatan global beringas, dan menjadi pijakan ekspansi imperial di Asia Timur Laut.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-taisho-1923-kanto",
+      "yearRangeId": "taisho-showa-awal",
+      "year": 1923,
+      "month": 9,
+      "title": "Gempa Besar Kanto",
+      "body": "Gempa bumi mematikan menghancurkan kawasan metropolitan Tokyo-Yokohama dan menewaskan lebih dari seratus ribu jiwa. Kebakaran besar yang menyusul memperparah krisis ekonomi finansial dan menyalakan sentimen anti-asing yang berbahaya.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-taisho-1929-depression",
+      "yearRangeId": "taisho-showa-awal",
+      "year": 1929,
+      "title": "Depresi Hebat melumpuhkan ekonomi Jepang",
+      "body": "Depresi Hebat dunia tahun 1929 melumpuhkan fondasi sipil dan memperparah kemiskinan perdesaan ekstrem di awal era Kaisar Hirohito. Krisis ini membuka pintu bagi kelompok ultranasionalis yang mengambil alih institusi politik melalui pembunuhan.",
+      "mood": "negative"
+    },
+    {
+      "id": "evt-showa-1932-may15",
+      "yearRangeId": "taisho-showa-awal",
+      "year": 1932,
+      "month": 5,
+      "title": "Insiden 15 Mei dan pembunuhan PM Inukai",
+      "body": "Sekelompok perwira muda Angkatan Laut menyerbu kediaman resmi Perdana Menteri Inukai Tsuyoshi pada 15 Mei 1932 dan menembaknya hingga tewas. Pembunuhan ini secara efektif mengakhiri pemerintahan partai sipil dan membuka era dominasi militer ultranasionalis atas kabinet Jepang.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-showa-1941-pearl-harbor",
+      "yearRangeId": "taisho-showa-awal",
+      "year": 1941,
+      "month": 12,
+      "title": "Penyerangan Pearl Harbor",
+      "body": "Jepang melancarkan serangan kejutan terhadap armada Amerika Serikat di Pearl Harbor. Serangan ini mengubah Asia Pasifik menjadi ladang pembantaian dan menyeret Amerika Serikat masuk ke dalam Perang Dunia Kedua di teater Pasifik.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-showa-1945-bom-atom",
+      "yearRangeId": "taisho-showa-awal",
+      "year": 1945,
+      "month": 8,
+      "title": "Bom atom Hiroshima dan Nagasaki",
+      "body": "Amerika Serikat menjatuhkan dua bom atom di Hiroshima pada 6 Agustus dan Nagasaki pada 9 Agustus 1945. Kehancuran skala industrial ini, ditambah invasi Soviet dari utara, memaksa Jepang mempertimbangkan penyerahan tanpa syarat.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-showa-1945-surrender",
+      "yearRangeId": "taisho-showa-awal",
+      "year": 1945,
+      "month": 8,
+      "title": "Penyerahan tanpa syarat Kaisar Hirohito",
+      "body": "Pada 15 Agustus 1945, Kaisar Hirohito menyatakan penyerahan tanpa syarat kepada blok Sekutu melalui siaran radio untuk pertama kalinya. Pernyataan ini mengakhiri Perang Dunia Kedua dan membuka era pendudukan dan rekonstruksi Jepang.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-pendudukan-1945-occupation",
+      "yearRangeId": "pendudukan-sekutu",
+      "year": 1945,
+      "month": 9,
+      "title": "Pendaratan tentara Sekutu di Jepang",
+      "body": "Pasukan Sekutu di bawah Jenderal Douglas MacArthur mendarat di Jepang dan memulai pendudukan. Militer Jepang didemobilisasi, kepemimpinan perang diadili, dan kerangka demokratisasi serta restrukturisasi ekonomi mulai dirancang dari Tokyo.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-pendudukan-1947-konstitusi",
+      "yearRangeId": "pendudukan-sekutu",
+      "year": 1947,
+      "month": 5,
+      "title": "Konstitusi pasifis baru diberlakukan",
+      "body": "Konstitusi pascaperang Jepang resmi berlaku pada 3 Mei 1947. Pasal 9 secara definitif melarang negara memiliki potensi perang dan menolak hak perang ofensif, menjadi simbol pasifisme yang dipuja kuat oleh masyarakat sipil pascaperang.",
+      "mood": "positive"
+    },
+    {
+      "id": "evt-pendudukan-1952-akhir",
+      "yearRangeId": "pendudukan-sekutu",
+      "year": 1952,
+      "title": "Akhir pendudukan dan kembalinya kedaulatan",
+      "body": "Perjanjian San Francisco berlaku efektif dan Jepang kembali memperoleh kedaulatannya. Negara ini terintegrasi ke dalam blok Barat dengan payung keamanan Amerika Serikat, sembari memulai pemulihan ekonomi yang melahirkan Keajaiban Ekonomi.",
+      "mood": "positive"
+    },
+    {
+      "id": "evt-kontemporer-1989-heisei",
+      "yearRangeId": "kontemporer",
+      "year": 1989,
+      "month": 5,
+      "title": "Awal era Heisei dan pengetatan moneter pertama",
+      "body": "Era Heisei dimulai di bawah Kaisar Akihito. Pada 30 Mei 1989, Bank of Japan memulai pengetatan moneter putaran pertama untuk mendinginkan ekonomi gelembung yang melonjak liar di pasar tanah dan saham.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-kontemporer-1989-nikkei",
+      "yearRangeId": "kontemporer",
+      "year": 1989,
+      "month": 12,
+      "title": "Nikkei 225 menembus rekor tertinggi",
+      "body": "Pada 29 Desember 1989, Indeks Nikkei 225 menembus rekor tertinggi sepanjang sejarah pasar Jepang. Rekor ini menandai puncak Ekonomi Gelembung sebelum Bank of Japan kembali mengetatkan kebijakan moneter dan memicu koreksi besar.",
+      "mood": "negative"
+    },
+    {
+      "id": "evt-kontemporer-1990-bubble",
+      "yearRangeId": "kontemporer",
+      "year": 1990,
+      "title": "Pecahnya gelembung aset Jepang",
+      "body": "Sepanjang tahun 1990, Indeks Nikkei runtuh lebih dari 30 persen dan harga tanah komersial mulai jatuh. Gelembung sekuritas dan real estat resmi pecah, menghancurkan kemampuan pinjaman spekulator korporat dan neraca bank-bank besar.",
+      "mood": "negative"
+    },
+    {
+      "id": "evt-kontemporer-1991-lost-decades",
+      "yearRangeId": "kontemporer",
+      "year": 1991,
+      "title": "Lost Decades dimulai",
+      "body": "Pertumbuhan ekonomi yang sebelumnya bertumbuh dengan figur ganda macet total. Jepang memasuki Dekade yang Hilang (Lost Decades) dengan deflasi kronis, neraca bank yang penuh kredit macet, dan epidemi sosiomedis karoshi akibat tekanan kerja ekstrem.",
+      "mood": "negative"
+    },
+    {
+      "id": "evt-kontemporer-2011-tohoku",
+      "yearRangeId": "kontemporer",
+      "year": 2011,
+      "month": 3,
+      "title": "Gempa Tohoku dan bencana nuklir Fukushima",
+      "body": "Pada 11 Maret 2011, gempa berkekuatan 9,0 magnitudo melanda lepas pantai Tohoku dan memicu tsunami raksasa yang menewaskan lebih dari delapan belas ribu jiwa. Kerusakan pada PLTN Fukushima Daiichi memicu krisis nuklir terburuk sejak Chernobyl dan memaksa evakuasi massal di kawasan utara Jepang.",
+      "mood": "dark"
+    },
+    {
+      "id": "evt-kontemporer-2014-article9",
+      "yearRangeId": "kontemporer",
+      "year": 2014,
+      "month": 7,
+      "title": "Reinterpretasi Pasal 9 Konstitusi",
+      "body": "Pada 1 Juli 2014, Kabinet Jepang menyetujui reinterpretasi Pasal 9 yang membebaskan tentara pasif untuk terjun langsung dalam pertahanan kolektif. Putusan ini memutus tradisi teoretik pasifisme yang dipertahankan sejak konstitusi 1947.",
+      "mood": "casual"
+    },
+    {
+      "id": "evt-kontemporer-2019-reiwa",
+      "yearRangeId": "kontemporer",
+      "year": 2019,
+      "month": 5,
+      "title": "Awal era Reiwa di bawah Kaisar Naruhito",
+      "body": "Pada 1 Mei 2019, Kaisar Akihito turun takhta secara sukarela dan putranya Naruhito naik takhta sebagai kaisar ke-126, menandai dimulainya era Reiwa. Transisi damai ini menjadi pergantian kaisar pertama dalam dua abad yang berlangsung tanpa wafat seorang kaisar.",
+      "mood": "sacred"
+    }
+  ]
+}
