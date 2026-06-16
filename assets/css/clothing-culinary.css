@@ -1,0 +1,11 @@
+[data-page="clothing-culinary"] .font-serif { font-family: 'Cormorant Garamond', serif; }
+[data-page="clothing-culinary"] .carousel-item img { height: 500px; object-fit: cover; }
+[data-page="clothing-culinary"] .carousel-caption {
+  background: linear-gradient(to top, rgba(26,34,45,0.95) 0%, rgba(26,34,45,0.7) 70%, transparent 100%);
+  bottom: 0; left: 0; right: 0; padding: 40px 40px 20px; text-align: left;
+}
+[data-page="clothing-culinary"] .custom-border-left { border-left: 4px solid #A33B3B; }
+[data-page="clothing-culinary"] .carousel-control-prev-icon,
+[data-page="clothing-culinary"] .carousel-control-next-icon {
+  background-color: rgba(26,34,45,0.8); border-radius: 50%; padding: 20px;
+}

@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20260520-9">
-  <script src="assets/js/main.js?v=20260520-9" defer></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body data-page="home">
   <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
@@ -23,9 +23,6 @@
           <strong>Project: NIPPON</strong>
         </span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Buka navigasi" data-nav-toggle>
-        <span class="nav-toggle-line"></span>
-      </button>
       <nav class="nav-links" aria-label="Navigasi utama" data-nav>
         <a class="nav-link" href="history.html" data-page="history">History</a>
         <a class="nav-link" href="art-music.html" data-page="art-music">Seni & Musik</a>
@@ -33,23 +30,18 @@
         <a class="nav-link" href="architecture.html" data-page="architecture">Arsitektur</a>
         <a class="nav-link" href="quiz.html" data-page="quiz">Kuis</a>
       </nav>
-      <a class="nav-orb" href="quiz.html" aria-label="Buka kuis budaya Jepang">
+      <button class="nav-orb" type="button" aria-expanded="false" aria-label="Buka navigasi" data-nav-toggle>
         <span aria-hidden="true">&#10047;</span>
-      </a>
+      </button>
     </div>
   </header>
 
   <main id="main-content">
     <section class="hero hero-home">
-      <div class="container hero-grid hero-grid-home">
+      <div class="container hero-grid">
         <div class="hero-copy">
           <h1 class="hero-title">
-            <span class="hero-title-prefix">
-              Project:
-              <span class="hero-stamp" aria-hidden="true">
-                <span class="hero-stamp-glyph">&#26085;<br>&#26412;</span>
-              </span>
-            </span>
+            <span class="hero-title-prefix">Project:</span>
             <span class="hero-title-name">NIPPON</span>
           </h1>
           <span class="hero-rule" aria-hidden="true"></span>
@@ -62,105 +54,266 @@
         <div class="hero-visual">
           <img src="assets/images/hero-fuji-pagoda-watercolor.png" alt="Gunung Fuji dan pagoda Chureito dilukis dengan teknik akuarel di atas kertas washi, dipadu dengan bunga sakura">
           <div class="hero-side-script" aria-hidden="true">
-            <span class="hero-side-mark"></span>
             <span class="hero-side-text">&#26085;&#26412;&#12398;&#25991;&#21270;&#12434;&#25506;&#12427;</span>
           </div>
         </div>
       </div>
     </section>
 
-    <div id="home-data-root">
-      <section id="overview-section" class="section section-pillars">
-        <div class="container overview-shell">
-          <header class="overview-copy">
-            <span class="section-line" aria-hidden="true"></span>
-            <h2>Lima pilar<br>budaya Jepang</h2>
-            <img class="overview-bonsai" src="assets/images/pine-ink.png" alt="" aria-hidden="true">
-          </header>
-          <div id="pillar-grid" class="pillar-grid"></div>
+    <section id="overview-section" class="section section-pillars">
+      <div class="container overview-shell">
+        <header class="overview-copy">
+          <span class="section-line" aria-hidden="true"></span>
+          <h2>Lima pilar<br>budaya Jepang</h2>
+          <img class="overview-bonsai" src="assets/images/pine-ink.png" alt="" aria-hidden="true">
+        </header>
+        <div class="pillar-grid">
+          <a class="pillar-card" href="history.html" aria-label="History - Perjalanan dari periode Jomon, istana Heian, era samurai, kota Edo, hingga Jepang modern.">
+            <span class="pillar-icon"><img src="assets/images/icon-history.svg" alt=""></span>
+            <div class="pillar-label"><h3>History</h3></div>
+            <div class="pillar-photo"><img src="assets/images/tile-castle.png" alt="Kastil Jepang tradisional dengan atap genting berlapis"></div>
+          </a>
+          <a class="pillar-card" href="art-music.html" aria-label="Seni & Musik - Kaligrafi, ukiyo-e, panggung Noh, taiko, hingga perkembangan musik kontemporer Jepang.">
+            <span class="pillar-icon"><img src="assets/images/icon-art.svg" alt=""></span>
+            <div class="pillar-label"><h3>Seni & Musik</h3></div>
+            <div class="pillar-photo"><img src="assets/images/tile-shamisen.png" alt="Tangan memetik shamisen dalam kimono tradisional"></div>
+          </a>
+          <a class="pillar-card" href="clothing-culinary.html" aria-label="Pakaian & Kuliner - Kimono, ramen, dan kuliner per wilayah. Cara Jepang membaca musim, formalitas, dan kebersamaan di meja makan.">
+            <span class="pillar-icon"><img src="assets/images/icon-clothing-culinary.svg" alt=""></span>
+            <div class="pillar-label"><h3>Pakaian & Kuliner</h3></div>
+            <div class="pillar-photo"><img src="assets/images/tile-ramen-bowl.png" alt="Semangkuk ramen dengan chashu, telur setengah matang, dan nori di atas meja kayu"></div>
+          </a>
+          <a class="pillar-card" href="architecture.html" aria-label="Arsitektur - Tatami, shoji, dan engawa membentuk ambang yang lembut antara ruang dalam dan alam di luar rumah.">
+            <span class="pillar-icon"><img src="assets/images/icon-architecture.svg" alt=""></span>
+            <div class="pillar-label"><h3>Arsitektur</h3></div>
+            <div class="pillar-photo"><img src="assets/images/tile-temple-roof.png" alt="Detail atap kayu kuil tradisional dengan pewarnaan vermilion dan genting hitam"></div>
+          </a>
+          <a class="pillar-card" href="quiz.html" aria-label="Kuis - Mode pilihan ganda untuk memeriksa pemahaman, dan kartu belajar untuk mengulang istilah inti.">
+            <span class="pillar-icon"><img src="assets/images/icon-quiz.svg" alt=""></span>
+            <div class="pillar-label"><h3>Kuis</h3></div>
+            <div class="pillar-photo pillar-photo-empty"></div>
+          </a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="stats-section" class="section">
-        <div class="container">
-          <header class="section-header">
-            <span class="eyebrow">Fakta Singkat</span>
-            <h2>Angka yang membantu membaca Jepang</h2>
-            <p class="lead">Angka-angka berikut bukan kesimpulan, melainkan titik awal untuk memahami kedalaman budaya Jepang.</p>
-          </header>
-          <div id="stats-grid" class="stats-grid"></div>
-        </div>
-      </section>
-
-      <section id="featured-section" class="section is-soft">
-        <div class="container">
-          <header class="section-header">
-            <span class="eyebrow">Lima Pintu Masuk</span>
-            <h2>Lima halaman, lima cara membaca</h2>
-            <p class="lead">Sebagian disajikan sebagai linimasa, sebagian lain lebih hidup dalam format kartu, dan sisanya mengajak pembaca untuk belajar secara aktif.</p>
-          </header>
-          <div id="preview-grid" class="preview-grid"></div>
-        </div>
-      </section>
-
-      <section id="regional-section" class="section">
-        <div class="container story-split">
-          <article class="story-card">
-            <span class="eyebrow">Identitas Regional</span>
-            <h2>Jepang memiliki banyak wajah: utara, pusat, dan kepulauan selatan masing-masing bercerita berbeda.</h2>
-            <p class="lead compact">Budaya Jepang tidak bisa diperlakukan sebagai satu kesatuan tunggal. Iklim, jalur laut, sejarah kota, dan posisi geografis tiap wilayah membentuk karakter yang sangat berbeda satu sama lain.</p>
-            <ul class="story-list">
-              <li><strong>Hokkaido dan Tohoku:</strong> iklim dingin, makanan yang menghangatkan, serta festival yang erat dengan pergantian musim.</li>
-              <li><strong>Kanto dan Kansai:</strong> pusat politik modern berhadapan dengan kota dagang dan tradisi kuil yang lebih tua.</li>
-              <li><strong>Shikoku, Kyushu, dan Okinawa:</strong> jalur maritim, tradisi ziarah, dan keterbukaan kepulauan terhadap pengaruh dari luar.</li>
-            </ul>
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Fakta Singkat</span>
+          <h2>Angka yang membantu membaca Jepang</h2>
+          <p class="lead">Angka-angka berikut bukan kesimpulan, melainkan titik awal untuk memahami kedalaman budaya Jepang.</p>
+        </header>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <strong>4</strong>
+            <h3>pulau utama</h3>
+            <p class="muted">Honshu, Hokkaido, Kyushu, dan Shikoku merupakan empat pulau yang membentuk inti geografis Jepang.</p>
           </article>
-          <article class="story-visual">
-            <img src="assets/images/torii-gate.png" alt="Gerbang torii di tepi air sebagai simbol lanskap budaya regional Jepang">
-            <div class="story-caption">
-              <span class="eyebrow">Tempat sebagai konteks</span>
-              <p>Topografi, laut, pegunungan, dan pergantian musim turut menjelaskan mengapa ekspresi budaya Jepang begitu lekat dengan tempat asalnya.</p>
-            </div>
+          <article class="stat-card">
+            <strong>47</strong>
+            <h3>prefektur</h3>
+            <p class="muted">Setiap prefektur memiliki cita rasa, festival, dan dialek yang khas, sehingga citra Jepang tidak pernah seragam.</p>
           </article>
-        </div>
-      </section>
-
-      <section id="culture-section" class="section">
-        <div class="container gallery-layout">
-          <article class="panel">
-            <div class="panel-body">
-              <span class="eyebrow">Etiket Sehari-hari</span>
-              <h2>Hal-hal kecil yang sebetulnya membentuk pengalaman sehari-hari</h2>
-              <ul id="quick-facts-list" class="fact-list"></ul>
-            </div>
+          <article class="stat-card">
+            <strong>8</strong>
+            <h3>wilayah budaya</h3>
+            <p class="muted">Pengelompokan regional membantu menjelaskan perbedaan karakter antara Hokkaido, Kansai, Kyushu, hingga Okinawa.</p>
           </article>
-          <article class="panel">
-            <div class="panel-body">
-              <span class="eyebrow">Festival</span>
-              <h3>Momen-momen yang merekatkan komunitas</h3>
-              <ol id="festival-list" class="fact-list"></ol>
-              <div class="callout">Dari hanami hingga perayaan tahun baru, banyak praktik budaya Jepang yang lahir dari cara masyarakatnya membaca musim, keberuntungan, dan kebersamaan.</div>
-            </div>
+          <article class="stat-card">
+            <strong>14k+</strong>
+            <h3>tahun jejak budaya</h3>
+            <p class="muted">Lapisan budaya Jepang terbentang dari komunitas Jomon hingga era Reiwa, dan tetap berlanjut hingga kini.</p>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="cta-section" class="section is-soft">
-        <div class="container">
-          <article class="panel">
-            <div class="panel-body">
-              <span class="eyebrow">Mulai Dari Sini</span>
-              <h2 id="cta-title">Pilih sisi Jepang yang ingin didalami terlebih dahulu</h2>
-              <p id="cta-text" class="lead">Halaman sejarah dapat menjadi titik awal untuk memahami konteks besarnya. Halaman seni, kuliner, arsitektur, dan kuis tersedia bagi pembaca yang lebih nyaman menempuh jalur tematik.</p>
-              <div class="button-row">
-                <a class="button" href="art-music.html">Lihat seni & musik</a>
-                <a class="button-ghost" href="clothing-culinary.html">Telusuri pakaian & kuliner</a>
+    <section class="section is-soft">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Lima Pintu Masuk</span>
+          <h2>Lima halaman, lima cara membaca</h2>
+          <p class="lead">Sebagian disajikan sebagai linimasa, sebagian lain lebih hidup dalam format kartu, dan sisanya mengajak pembaca untuk belajar secara aktif.</p>
+        </header>
+        <div class="preview-grid">
+          <article class="card">
+            <div class="card-media"><img src="assets/images/great-wave.png" alt="Cetakan ukiyo-e Great Wave karya Hokusai"></div>
+            <div class="card-body">
+              <div class="chip-list">
+                <span class="chip">Linimasa</span>
+                <span class="chip">Era</span>
+                <span class="chip">Konteks</span>
               </div>
+              <h3>Linimasa dari Jomon ke Jepang modern</h3>
+              <p class="muted">Linimasa vertikal yang membaca pergeseran kekuasaan dari komunitas awal, istana, era samurai, kota dagang, hingga negara modern.</p>
+              <a class="preview-card-link" href="history.html">Buka linimasa</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-media"><img src="assets/images/japanese-arts.png" alt="Penari Noh dalam kimono brokat di panggung tradisional"></div>
+            <div class="card-body">
+              <div class="chip-list">
+                <span class="chip">Kategori</span>
+                <span class="chip">Sorotan</span>
+                <span class="chip">Catatan</span>
+              </div>
+              <h3>Galeri seni, panggung, dan instrumen</h3>
+              <p class="muted">Karya, pertunjukan, dan instrumen yang memperlihatkan keterkaitan antara seni rupa, panggung, dan bunyi dalam tradisi Jepang.</p>
+              <a class="preview-card-link" href="art-music.html">Lihat galeri</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-media"><img src="assets/images/sushi-plate.png" alt="Sajian sushi di atas piring keramik gelap"></div>
+            <div class="card-body">
+              <div class="chip-list">
+                <span class="chip">Busana</span>
+                <span class="chip">Wilayah</span>
+                <span class="chip">Rasa</span>
+              </div>
+              <h3>Ragam busana dan peta rasa regional</h3>
+              <p class="muted">Pakaian tradisional dan masakan daerah memperlihatkan bagaimana musim, formalitas, dan letak geografis ikut membentuk kebiasaan harian.</p>
+              <a class="preview-card-link" href="clothing-culinary.html">Telusuri busana & rasa</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-media"><img src="assets/images/japanese-architecture.png" alt="Ruang tatami terbuka ke taman Jepang lewat pintu geser kayu"></div>
+            <div class="card-body">
+              <div class="chip-list">
+                <span class="chip">Elemen</span>
+                <span class="chip">Denah</span>
+                <span class="chip">Ruang</span>
+              </div>
+              <h3>Eksplorasi rumah tradisional</h3>
+              <p class="muted">Tatami, fusuma, shoji, engawa, dan beragam tipe hunian dapat ditelusuri secara bertahap melalui satu eksplorer ruang yang ringkas.</p>
+              <a class="preview-card-link" href="architecture.html">Masuk ke ruang tradisional</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-media"><img src="assets/images/zen-garden.png" alt="Taman batu Zen dengan pasir putih yang disapu rapi"></div>
+            <div class="card-body">
+              <div class="chip-list">
+                <span class="chip">Latihan</span>
+                <span class="chip">Kartu</span>
+                <span class="chip">Skor</span>
+              </div>
+              <h3>Mode kuis dan kartu belajar</h3>
+              <p class="muted">Mode pilihan ganda untuk memeriksa pemahaman, dan kartu belajar untuk mengulang istilah dengan ritme yang lebih ringan.</p>
+              <a class="preview-card-link" href="quiz.html">Mulai latihan</a>
             </div>
           </article>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <section id="regional-section" class="section">
+      <div class="container region-carousel" data-region-carousel>
+        <header class="region-carousel-head">
+          <div>
+            <span class="eyebrow">Identitas Regional</span>
+            <h2>Lima situs yang paling sering muncul saat orang membaca sejarah dan budaya Jepang.</h2>
+          </div>
+          <p class="lead compact">Setiap slide menampilkan satu tempat penting, satu foto penuh lebar, dan keterangan ringkas yang tetap mudah discan.</p>
+        </header>
+
+        <div class="region-carousel-frame">
+          <article class="region-slide is-active" data-region-slide>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Himeji_castle_in_may_2015.jpg/1280px-Himeji_castle_in_may_2015.jpg" alt="Himeji Castle dengan menara putih besar di atas bukit dan langit biru cerah">
+            <div class="region-caption">
+              <span class="region-kicker">Hyogo</span>
+              <h3>Himeji Castle</h3>
+              <p>Warisan dunia UNESCO dan salah satu kastil pre-modern paling terawat, dikenal lewat struktur pertahanan lengkap dan siluet putihnya.</p>
+            </div>
+          </article>
+
+          <article class="region-slide" data-region-slide aria-hidden="true">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Kiyomizu.jpg" alt="Kiyomizu-dera dengan panggung kayu dan pengunjung di teras kuil">
+            <div class="region-caption">
+              <span class="region-kicker">Kyoto</span>
+              <h3>Kiyomizu-dera</h3>
+              <p>Kuil Buddha bersejarah di Kyoto, terkenal lewat panggung kayu tinggi yang menghadap kota dan berubah kuat mengikuti musim.</p>
+            </div>
+          </article>
+
+          <article class="region-slide" data-region-slide aria-hidden="true">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg/1280px-Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg" alt="Lorong torii merah Fushimi Inari Taisha yang memanjang di jalur pegunungan">
+            <div class="region-caption">
+              <span class="region-kicker">Kyoto</span>
+              <h3>Fushimi Inari Taisha</h3>
+              <p>Jalur torii vermilion di lereng Inariyama membentuk salah satu pengalaman ruang paling ikonik dalam budaya kuil Jepang.</p>
+            </div>
+          </article>
+
+          <article class="region-slide" data-region-slide aria-hidden="true">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Itsukushima_Shrine_Torii_Gate_%2813890465459%29.jpg/1280px-Itsukushima_Shrine_Torii_Gate_%2813890465459%29.jpg" alt="Itsukushima Shrine dengan gerbang torii merah di atas air saat pasang">
+            <div class="region-caption">
+              <span class="region-kicker">Hiroshima</span>
+              <h3>Itsukushima Shrine</h3>
+              <p>Situs suci di Miyajima yang dikenal lewat torii terapungnya, mengikat arsitektur kuil dengan laut, pasang surut, dan lanskap pulau.</p>
+            </div>
+          </article>
+
+          <article class="region-slide" data-region-slide aria-hidden="true">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Ogi_Shirakawa-g%C5%8D%2C_Gifu%2C_Japan.jpg" alt="Desa Shirakawa-go dengan rumah beratap curam di lembah pegunungan berwarna musim gugur">
+            <div class="region-caption">
+              <span class="region-kicker">Gifu</span>
+              <h3>Shirakawa-go</h3>
+              <p>Desa pegunungan warisan dunia UNESCO dengan rumah gassho-zukuri, menunjukkan bagaimana salju membentuk arsitektur dan pola hidup.</p>
+            </div>
+          </article>
+
+          <button class="region-arrow region-arrow-prev" type="button" aria-label="Slide sebelumnya" data-region-prev>&#8249;</button>
+          <button class="region-arrow region-arrow-next" type="button" aria-label="Slide berikutnya" data-region-next>&#8250;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container gallery-layout">
+        <article class="panel">
+          <div class="panel-body">
+            <span class="eyebrow">Etiket Sehari-hari</span>
+            <h2>Hal-hal kecil yang sebetulnya membentuk pengalaman sehari-hari</h2>
+            <ul class="fact-list">
+              <li>Hanami, matsuri, dan beragam ritual tahunan menunjukkan betapa eratnya budaya Jepang dengan pergantian musim.</li>
+              <li>Konsep ma, atau jeda yang disengaja, hadir dalam musik, panggung, tata ruang, hingga rangkaian bunga ikebana.</li>
+              <li>Tradisi fermentasi seperti miso, shoyu, dan sake memperlihatkan pentingnya proses yang lambat dalam budaya pangan Jepang.</li>
+              <li>Arsitektur kayu tradisional adalah jawaban terhadap iklim lembap, gempa, serta perubahan cahaya sepanjang hari.</li>
+              <li>Kimono dan yukata bukan sekadar busana, melainkan tanda yang membaca musim, suasana acara, dan tingkat formalitas.</li>
+              <li>Budaya populer Jepang masa kini banyak meminjam logika lama tentang panggung, citra, dan disiplin pertunjukan.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-body">
+            <span class="eyebrow">Festival</span>
+            <h3>Momen-momen yang merekatkan komunitas</h3>
+            <ol class="fact-list">
+              <li><strong>Hanami:</strong> tradisi menikmati mekarnya bunga sakura sebagai momen sosial sekaligus penanda peralihan musim semi.</li>
+              <li><strong>Matsuri:</strong> festival lokal yang merekatkan komunitas melalui arak-arakan kuil, musik, dan simbol pelindung daerah setempat.</li>
+              <li><strong>Shogatsu:</strong> perayaan tahun baru Jepang dengan hidangan simbolik, kunjungan ke kuil, dan ritme awal tahun yang dijaga rapi.</li>
+            </ol>
+            <div class="callout">Dari hanami hingga perayaan tahun baru, banyak praktik budaya Jepang yang lahir dari cara masyarakatnya membaca musim, keberuntungan, dan kebersamaan.</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section is-soft">
+      <div class="container">
+        <article class="panel">
+          <div class="panel-body">
+            <span class="eyebrow">Mulai Dari Sini</span>
+            <h2>Pilih sisi Jepang yang ingin didalami terlebih dahulu</h2>
+            <p class="lead">Sejarah dapat menjadi titik awal untuk memahami konteks besarnya. Halaman seni, kuliner, arsitektur, dan kuis tersedia bagi pembaca yang lebih nyaman menempuh jalur tematik.</p>
+            <div class="button-row">
+              <a class="button" href="art-music.html">Lihat seni & musik</a>
+              <a class="button-ghost" href="clothing-culinary.html">Telusuri pakaian & kuliner</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer container">
