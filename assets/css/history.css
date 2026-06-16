@@ -63,28 +63,34 @@
     padding: 10px 0px;
 }
 
-#contentArea.dark { background: #11243f; }
-#contentArea.positive { background: #e8c98a; }
-#contentArea.negative { background: #7a2b22; }
-#contentArea.sacred { background: #f6ecc9; }
-#contentArea.casual { background: #d8c8a4; }
+#main-content.dark { background: #11243f; }
+#main-content.positive { background: #e8c98a; }
+#main-content.negative { background: #7a2b22; }
+#main-content.sacred { background: #f6ecc9; }
+#main-content.casual { background: #d8c8a4; }
 
-#contentArea.dark, #contentArea.negative {
+#main-content.dark, #main-content.negative{
   color: var(--surface);
 }
 
-#contentArea.dark .card,
-#contentArea.negative .card {
+#main-content.dark #historyDropdown, #main-content.negative #historyDropdown {
+  color: #11243f;
+}
+
+#main-content.dark .card,
+#main-content.negative .card {
     background: rgba(255,255,255,0.1);
     border-color: rgba(255,255,255,0.2);
 }
 
-#contentArea.dark h2,
-#contentArea.dark h3,
-#contentArea.dark h4,
-#contentArea.negative h2,
-#contentArea.negative h3,
-#contentArea.negative h4 {
+#main-content.dark h2,
+#main-content.dark h3,
+#main-content.dark h4,
+#main-content.negative h2,
+#main-content.negative h3,
+#main-content.negative h4,
+#main-content.dark h1,
+#main-content.negative h1 {
     color: #ffffff;
 }
 

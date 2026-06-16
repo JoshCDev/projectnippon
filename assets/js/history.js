@@ -41,7 +41,7 @@ fetch('assets/data/history.json')
             let moo = data.yearRanges.find(function(mud){
               return mud.label === chosen;
             })
-            $('#contentArea').removeClass('dark positive negative sacred casual').addClass(moo.mood);
+            $('#main-content').removeClass('dark positive negative sacred casual').addClass(moo.mood);
             $('[data-periode]').hide();
             $(`[data-periode="${chosen}"]`).show();
         })
