@@ -5,14 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kuis Interaktif | Project: NIPPON</title>
   <meta name="description" content="Halaman kuis interaktif Project: NIPPON.">
+  <link rel="icon" href="assets/images/nippon-crest.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css?v=20260520-9">
+  <link rel="stylesheet" href="assets/css/quiz.css?v=20260616-1">
   <script src="assets/js/main.js?v=20260520-9" defer></script>
+  <script src="assets/js/quiz.js?v=20260616-1" defer></script>
 </head>
-<body>
+<body data-page="quiz">
   <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
   <header class="site-header">
     <div class="container nav-shell">
@@ -33,14 +36,36 @@
   </header>
 
   <main id="main-content">
-    <section class="page-placeholder">
-      <div class="container page-placeholder-shell">
-        <span class="eyebrow">Kuis Interaktif</span>
-        <h1 class="page-placeholder-title">Halaman ini sedang dalam <span>persiapan</span>.</h1>
-        <p class="lead">Konten kuis akan dipasang di sini. Sementara ini, kembali ke beranda untuk menjelajah pilar budaya lainnya.</p>
-        <div class="button-row">
-          <a class="button" href="index.html">Kembali ke beranda</a>
+    <section class="quiz-hero">
+      <div class="container quiz-hero-grid">
+        <div>
+          <span class="eyebrow">Kuis Interaktif</span>
+          <h1>Uji pemahaman budaya Jepang</h1>
+          <p class="lead">Setiap halaman dibuka ulang, sistem memilih 5 pertanyaan acak dari 20 soal budaya Jepang.</p>
         </div>
+        <img src="assets/images/zen-garden.png" alt="Taman batu Zen dengan pola pasir melingkar">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container quiz-shell" data-quiz-root>
+        <aside class="quiz-panel">
+          <span class="eyebrow">Ringkasan</span>
+          <p class="muted">Kuis ini berisi campuran sejarah, seni, musik, pakaian, kuliner, dan arsitektur.</p>
+          <div class="quiz-score" data-quiz-score>Skor: 0/0</div>
+          <button class="button-secondary" type="button" data-quiz-restart>Acak Ulang</button>
+        </aside>
+
+        <form class="quiz-card" data-quiz-form>
+          <p class="quiz-progress" data-quiz-progress>Pertanyaan 1</p>
+          <h2 data-quiz-question>Memuat pertanyaan...</h2>
+          <div class="quiz-options" data-quiz-options></div>
+          <p class="quiz-feedback" data-quiz-feedback aria-live="polite"></p>
+          <div class="button-row">
+            <button class="button" type="submit">Cek Jawaban</button>
+            <button class="button-ghost" type="button" data-quiz-next>Pertanyaan Berikutnya</button>
+          </div>
+        </form>
       </div>
     </section>
   </main>
