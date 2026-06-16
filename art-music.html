@@ -35,16 +35,559 @@
   </header>
 
   <main id="main-content">
-    <section class="page-placeholder">
-      <div class="container page-placeholder-shell">
-        <span class="eyebrow">Seni & Musik</span>
-        <h1 class="page-placeholder-title">Halaman ini sedang dalam <span>persiapan</span>.</h1>
-        <p class="lead">Konten seni dan musik akan dipasang di sini. Sementara ini, kembali ke beranda untuk menjelajah pilar budaya lainnya.</p>
-        <div class="button-row">
-          <a class="button" href="index.html">Kembali ke beranda</a>
+    
+    <style>
+      .culture-wrapper {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 60px 20px;
+      }
+      
+      .culture-title-area {
+        text-align: center;
+        margin-bottom: 70px;
+      }
+      .culture-title-area h1 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 3.5rem;
+        color: #1A222D;
+        margin: 10px 0 20px;
+      }
+      .culture-title-area p {
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: #4a5568; 
+        max-width: 700px; 
+        margin: 0 auto; 
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+      
+      .section-heading {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 2.2rem;
+        color: #1A222D;
+        border-left: 4px solid #A33B3B;
+        padding-left: 15px;
+        margin-bottom: 40px;
+        margin-top: 60px;
+      }
+      
+      .sub-heading {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.8rem;
+        color: #A33B3B;
+        margin-bottom: 25px;
+        border-bottom: 1px solid rgba(163, 59, 59, 0.2);
+        padding-bottom: 10px;
+      }
+
+      .art-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-bottom: 40px;
+      }
+      .art-card {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        border-bottom: 4px solid #A33B3B;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .art-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      }
+      .art-image {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+      }
+      .art-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+      .art-card:hover .art-image img { transform: scale(1.1); }
+      .art-info { padding: 25px; }
+      .art-info h3 {
+        font-family: 'Cormorant Garamond', serif;
+        color: #A33B3B;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+      .art-info p {
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: #4a5568;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+
+      .play-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        background: rgba(163, 59, 59, 0.9);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: #fff;
+        transition: 0.3s;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      }
+      .audio-trigger { cursor: pointer; position: relative; }
+      .audio-trigger:hover .play-icon {
+        background: #fff;
+        color: #A33B3B;
+        transform: translate(-50%, -50%) scale(1.15);
+      }
+      .playing-border { border: 3px solid #A33B3B !important; }
+
+      .music-section { margin-bottom: 60px; }
+      .hogaku-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+      }
+      .hogaku-card {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+        border-bottom: 4px solid #A33B3B;
+        transition: transform 0.3s;
+      }
+      .hogaku-card:hover { transform: translateY(-5px); }
+      .hogaku-img {
+        width: 100%;
+        height: 180px;
+      }
+      .hogaku-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .hogaku-content { padding: 25px; }
+      .hogaku-content h4 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.6rem;
+        color: #1A222D;
+        margin-bottom: 12px;
+      }
+      .hogaku-content p {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 0.95rem;
+        color: #4a5568;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .instrument-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        gap: 30px;
+      }
+      .inst-card {
+        display: flex;
+        background: #1A222D;
+        border-radius: 12px;
+        overflow: hidden;
+        color: #F5F3EB;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        border: 3px solid transparent; 
+        transition: border 0.3s;
+      }
+      .inst-img {
+        width: 40%;
+      }
+      .inst-img img {
+        width: 100%;
+        height: 100%;
+        min-height: 200px;
+        object-fit: cover;
+        display: block;
+        opacity: 0.8;
+        transition: opacity 0.3s;
+      }
+      .inst-img:hover img { opacity: 0.5; }
+      .inst-info {
+        width: 60%;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .inst-info h4 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+        color: #F5F3EB;
+      }
+      .inst-info p {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #cbd5e1;
+        margin: 0;
+      }
+
+      .modern-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+      }
+      .modern-card {
+        background: #fff;
+        padding: 25px;
+        border-left: 4px solid #1A222D;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+        border-radius: 4px 8px 8px 4px;
+        transition: transform 0.2s ease;
+      }
+      .modern-card:hover { transform: translateX(5px); }
+      .modern-card h4 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.5rem;
+        color: #1A222D;
+        margin-bottom: 10px;
+      }
+      .modern-card p {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 0.95rem;
+        color: #4a5568;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      @media (max-width: 768px) {
+        .instrument-grid { grid-template-columns: 1fr; }
+        .inst-card { flex-direction: column; }
+        .inst-img { width: 100%; height: 200px; }
+        .inst-info { width: 100%; }
+      }
+    </style>
+
+    <div class="culture-wrapper">
+      
+      <div class="culture-title-area">
+        <span style="color: #A33B3B; font-family: 'Noto Serif JP', serif; font-weight: bold; letter-spacing: 2px;">芸術と音楽</span>
+        <h1>Seni & Musik</h1>
+        <p>Selami keindahan karya rupa yang menangkap kefanaan dunia, dan klik pada gambar instrumen untuk mendengarkan gema melodi dari Jepang.</p>
+      </div>
+
+      <div style="margin-bottom: 80px;">
+        <h2 class="section-heading">Kekayaan Seni Jepang (Bijutsu)</h2>
+        <p style="font-family: 'IBM Plex Sans', sans-serif; color: #4a5568; margin-bottom: 30px;">Enam pilar utama estetika Jepang yang membentang dari tradisi klasik yang meditatif hingga budaya pop modern yang mendunia.</p>
+        
+        <div class="art-grid">
+          
+          <div class="art-card">
+            <div class="art-image">
+              <img src="assets/images/Visual.jpg" alt="Seni Rupa Visual">
+            </div>
+            <div class="art-info">
+              <h3>1. Seni Rupa & Visual</h3>
+              <p>Berfokus pada detail dan filosofi alam. Meliputi seni cukil kayu (<strong>Ukiyo-e</strong>), seni kaligrafi (<strong>Shodō</strong>), dan lukisan tinta gradasi (<strong>Sumi-e</strong>).</p>
+            </div>
+          </div>
+
+          <div class="art-card">
+            <div class="art-image">
+              <img src="assets/images/origami.jpg" alt="Kerajinan Tangan">
+            </div>
+            <div class="art-info">
+              <h3>2. Kerajinan Tangan</h3>
+              <p>Menghargai fungsi dan keindahan ketidaksempurnaan (<em>wabi-sabi</em>). Termasuk seni lipat kertas (<strong>Origami</strong>), perbaikan keramik dengan emas (<strong>Kintsugi</strong>), dan tembikar (<strong>Yakimono</strong>).</p>
+            </div>
+          </div>
+
+          <div class="art-card">
+            <div class="art-image">
+              <img src="assets/images/bisonbison-kimi-no-na-wa-miyamizu-mitsuha-tvoio-imia-anime-d.jpg" alt="Seni Pertunjukan">
+            </div>
+            <div class="art-info">
+              <h3>3. Seni Pertunjukan</h3>
+              <p>Seni panggung teatrikal dengan riasan dan gerakan ketat. Terdiri dari teater tari (<strong>Kabuki</strong>), teater topeng (<strong>Noh</strong>), dan teater boneka (<strong>Bunraku</strong>).</p>
+            </div>
+          </div>
+
+          <div class="art-card">
+            <div class="art-image">
+              <img src="assets/images/bonsai.webp" alt="Gaya Hidup">
+            </div>
+            <div class="art-info">
+              <h3>4. Kehidupan & Alam</h3>
+              <p>Estetika yang diintegrasikan ke aktivitas sehari-hari sebagai meditasi, seperti upacara minum teh (<strong>Sadō</strong>), merangkai bunga (<strong>Ikebana</strong>), dan pohon kerdil (<strong>Bonsai</strong>).</p>
+            </div>
+          </div>
+
+          <div class="art-card">
+            <div class="art-image">
+              <img src="assets/images/puisi.avif" alt="Seni Sastra">
+            </div>
+            <div class="art-info">
+              <h3>5. Seni Sastra</h3>
+              <p>Terkenal padat, kaya makna, dan lekat dengan musim. Dikenal lewat puisi pendek 3 baris (<strong>Haiku</strong>) dan puisi klasik yang lebih panjang (<strong>Tanka</strong>).</p>
+            </div>
+          </div>
+
+          <div class="art-card">
+            <div class="art-image">
+              <img src="assets/images/mural.webp" alt="Seni Modern">
+            </div>
+            <div class="art-info">
+              <h3>6. Modern & Populer</h3>
+              <p>Seni kontemporer Jepang yang mendominasi budaya pop global saat ini, berpusat pada novel grafis/komik (<strong>Manga</strong>) dan seni animasi (<strong>Anime</strong>).</p>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section>
+
+      <div>
+        <h2 class="section-heading">Evolusi Nada (Ongaku)</h2>
+
+        <div class="music-section">
+          <h3 class="sub-heading">1. Musik Tradisional Jepang (Hōgaku)</h3>
+          <p style="font-family: 'IBM Plex Sans', sans-serif; color: #4a5568; margin-bottom: 25px;">(Klik gambar untuk memutar cuplikan suara)</p>
+          
+          <div class="hogaku-grid">
+            
+            <div class="hogaku-card">
+              <div class="hogaku-img audio-trigger" onclick="toggleAudio('audio-gagaku', this)">
+                <img src="assets/images/gagaku.jpg" alt="Gagaku">
+                <div class="play-icon">&#9654;</div>
+                <audio id="audio-gagaku" src="assets/mp3/Japanese Gagaku (Amsterdam 2012).mp3"></audio>
+              </div>
+              <div class="hogaku-content">
+                <h4>Gagaku</h4>
+                <p>Musik istana kekaisaran kuno Jepang. Menggabungkan instrumen tiup kayu, senar, dan perkusi dengan tempo yang lambat dan sakral.</p>
+              </div>
+            </div>
+
+            <div class="hogaku-card">
+              <div class="hogaku-img audio-trigger" onclick="toggleAudio('audio-minyo', this)">
+                <img src="assets/images/minyo.jpg" alt="Matsuri">
+                <div class="play-icon">&#9654;</div>
+                <audio id="audio-minyo" src="assets/mp3/Sakura Sakura (traditional Japanese melody and lyrics )with subtitles.mp3"></audio>
+              </div>
+              <div class="hogaku-content">
+                <h4>Min'yō (Lagu Rakyat)</h4>
+                <p>Lagu daerah yang dinyanyikan oleh pekerja atau petani. Memiliki ketukan khas untuk mengiringi tarian dalam festival (Matsuri).</p>
+              </div>
+            </div>
+
+            <div class="hogaku-card">
+              <div class="hogaku-img audio-trigger" onclick="toggleAudio('audio-shomyo', this)">
+                <img src="assets/images/shomyo.jpg" alt="Biksu Buddha">
+                <div class="play-icon">&#9654;</div>
+                <audio id="audio-shomyo" src="assets/mp3/Vairocana Mantra of light (Komyo Shingon) 光明真言.mp3"></audio>
+              </div>
+              <div class="hogaku-content">
+                <h4>Shōmyō</h4>
+                <p>Nyanyian ritual Buddha yang dibawakan tanpa iringan instrumen musik (akapela). Menjadi salah satu fondasi melodi tradisional Jepang.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="music-section">
+          <h3 class="sub-heading">2. Instrumen Karakteristik</h3>
+          <p style="font-family: 'IBM Plex Sans', sans-serif; color: #4a5568; margin-bottom: 25px;">Suara musik tradisional Jepang sangat dipengaruhi oleh instrumen-instrumen pembentuk jiwa berikut. (Klik gambar untuk mendengar):</p>
+          
+          <div class="instrument-grid">
+            
+            <div class="inst-card" id="card-koto">
+              <div class="inst-img audio-trigger" onclick="toggleAudio('audio-koto', this, 'card-koto')">
+                <img src="assets/images/koto.webp" alt="Koto">
+                <div class="play-icon">&#9654;</div>
+                <audio id="audio-koto" src="assets/mp3/Tanko Bushi  Koto _ Traditional String Music of Japan  江東区日本の伝統音楽.mp3"></audio>
+              </div>
+              <div class="inst-info">
+                <h4>Koto</h4>
+                <p>Kecapi panjang dengan 13 senar yang dipetik menggunakan pelindung jari khusus. Suaranya sangat anggun dan elegan.</p>
+              </div>
+            </div>
+
+            <div class="inst-card" id="card-shamisen">
+              <div class="inst-img audio-trigger" onclick="toggleAudio('audio-shamisen', this, 'card-shamisen')">
+                <img src="assets/images/shamishen.webp" alt="Shamisen">
+                <div class="play-icon">&#9654;</div>
+                <audio id="audio-shamisen" src="assets/mp3/朝が来る三味線だけで弾いてみたら火傷したぜ [鬼滅の刃 遊郭編Demon slayer 2nd ED Theme  Asa ga kuru  Japanese Shamisen Cover].mp3"></audio>
+              </div>
+              <div class="inst-info">
+                <h4>Shamisen</h4>
+                <p>Instrumen petik berleher panjang. Suaranya nyaring dan bersemangat, sering digunakan dalam teater Kabuki.</p>
+              </div>
+            </div>
+
+            <div class="inst-card" id="card-shakuhachi">
+              <div class="inst-img audio-trigger" onclick="toggleAudio('audio-shakuhachi', this, 'card-shakuhachi')">
+                <img src="assets/images/sakuhachi.webp" alt="Shakuhachi">
+                <div class="play-icon">&#9654;</div>
+                <audio id="audio-shakuhachi" src="assets/mp3/尺八SHAKUHACHI flute - Rodrigo Rodriguez - contemporary Japanese music.mp3"></audio>
+              </div>
+              <div class="inst-info">
+                <h4>Shakuhachi</h4>
+                <p>Seruling bambu kuno. Menghasilkan suara yang mistis, dalam, dan menenangkan jiwa, sering digunakan untuk meditasi Zen.</p>
+              </div>
+            </div>
+
+            <div class="inst-card" id="card-taiko">
+              <div class="inst-img audio-trigger" onclick="toggleAudio('audio-taiko', this, 'card-taiko')">
+                <img src="assets/images/taiko.webp" alt="Taiko">
+                <div class="play-icon">&#9654;</div>
+                <audio id="audio-taiko" src="assets/mp3/Japanese Taiko Drum Ensemble.mp3"></audio>
+              </div>
+              <div class="inst-info">
+                <h4>Taiko</h4>
+                <p>Drum besar yang dimainkan bertenaga dan ritmis, sering menjadi pemompa semangat utama dalam festival budaya Jepang.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="music-section">
+          <h3 class="sub-heading">3. Musik Karakteristik Modern Jepang</h3>
+          <p style="font-family: 'IBM Plex Sans', sans-serif; color: #4a5568; margin-bottom: 25px;">(Klik gambar untuk memutar cuplikan suara)</p>
+          
+          <div class="hogaku-grid">
+            
+            <div class="hogaku-card">
+              <div class="hogaku-img audio-trigger" onclick="toggleAudio('audio-enka', this)">
+                <img src="assets/images/enka.jpg" alt="Enka">
+                <div class="play-icon">&#9654;</div>
+                <audio id="audio-enka" src="assets/mp3/Oldies JAPAN ENKA YT009.2 Impatiens.avi.mp3"></audio>
+              </div>
+              <div class="hogaku-content">
+                <h4>Enka</h4>
+                <p>Pop retro pasca-perang dengan teknik vokal tradisional (kobushi). Tema lagunya melankolis, menceritakan kerinduan atau kampung halaman.</p>
+              </div>
+            </div>
+
+            <div class="hogaku-card">
+              <div class="hogaku-img audio-trigger" onclick="toggleAudio('audio-citypop', this)">
+                <img src="assets/images/citypop.jpg" alt="City Pop">
+                <div class="play-icon">&#9654;</div>
+                <audio id="audio-citypop" src="assets/mp3/フライディチャイナタウン 泰葉 Official Lyric Video.mp3"></audio>
+              </div>
+              <div class="hogaku-content">
+                <h4>City Pop</h4>
+                <p>Pop Jepang era 80-an yang menggabungkan jazz fusion, funk, dan disco dengan nuansa perkotaan modern yang santai.</p>
+              </div>
+            </div>
+
+            <div class="hogaku-card">
+              <div class="hogaku-img audio-trigger" onclick="toggleAudio('audio-jpop', this)">
+                <img src="assets/images/jpop.jpg" alt="J-Pop ">
+                <div class="play-icon">&#9654;</div>
+                <audio id="audio-jpop" src="assets/mp3/imaseNIGHT DANCERMV.mp3"></audio>
+              </div>
+              <div class="hogaku-content">
+                <h4>J-Pop</h4>
+                <p>Musik pop modern dengan struktur melodi yang kompleks dan progresi akor yang unik, khas industri musik Jepang.</p>
+              </div>
+            </div>
+
+            <div class="hogaku-card">
+              <div class="hogaku-img audio-trigger" onclick="toggleAudio('audio-anisong', this)">
+                <img src="assets/images/kiminonawa.jpg" alt="Anisong">
+                <div class="play-icon">&#9654;</div>
+                <audio id="audio-anisong" src="assets/mp3/スパークル [original ver.] -Your name. Music Video edition- 予告編 from new album人間開花初回盤DVD.mp3"></audio>
+              </div>
+              <div class="hogaku-content">
+                <h4>Anisong (Anime Song)</h4>
+                <p>Lagu tema animasi yang sangat variatif, mulai dari orkestra megah hingga rock distorsi dengan aransemen super dinamis.</p>
+              </div>
+            </div>
+
+            <div class="hogaku-card">
+              <div class="hogaku-img audio-trigger" onclick="toggleAudio('audio-VocaEDM', this)">
+                <img src="assets/images/miku.png" alt="VocaEDM">
+                <div class="play-icon">&#9654;</div>
+                <audio id="audio-VocaEDM" src="assets/mp3/メズマライザー  初音ミク重音テトSV.mp3"></audio>
+              </div>
+              <div class="hogaku-content">
+                <h4>Vocaloid EDM</h4>
+                <p>Lagu yang memadukan vokal sintetis dengan ketukan Electronic Dance Music (EDM) yang dinamis, meliputi berbagai subgenre mulai dari house dan trance hingga hardcore.</p>
+              </div>
+            </div>
+
+            <div class="hogaku-card">
+              <div class="hogaku-img audio-trigger" onclick="toggleAudio('audio-J-rock', this)">
+                <img src="assets/images/anim.jpg" alt="J-rock">
+                <div class="play-icon">&#9654;</div>
+                <audio id="audio-J-rock" src="assets/mp3/Naruto Shippuden Op Opening 16 [4k 60 FSP].mp3"></audio>
+              </div>
+              <div class="hogaku-content">
+                <h4>J-Rock</h4>
+                <p>Aliran ini menggabungkan instrumentasi musik rock Barat (seperti gitar elektrik dan drum) dengan melodi, lirik, atau elemen visual khas Jepang.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script>
+      let currentAudio = null;
+      let currentIcon = null;
+      let currentCard = null;
+
+      function toggleAudio(audioId, element, cardId = null) {
+        const audioToPlay = document.getElementById(audioId);
+        const icon = element.querySelector('.play-icon');
+        const cardElement = cardId ? document.getElementById(cardId) : null;
+
+        if (currentAudio && currentAudio !== audioToPlay) {
+          currentAudio.pause();
+          currentAudio.currentTime = 0;
+          if (currentIcon) currentIcon.innerHTML = '&#9654;'; 
+          if (currentCard) currentCard.classList.remove('playing-border');
+        }
+
+        if (audioToPlay.paused) {
+          audioToPlay.play();
+          icon.innerHTML = '&#10074;&#10074;'; 
+          if (cardElement) cardElement.classList.add('playing-border');
+          
+          currentAudio = audioToPlay;
+          currentIcon = icon;
+          currentCard = cardElement;
+        } else {
+          audioToPlay.pause();
+          icon.innerHTML = '&#9654;';
+          if (cardElement) cardElement.classList.remove('playing-border');
+          
+          currentAudio = null;
+          currentIcon = null;
+          currentCard = null;
+        }
+
+        audioToPlay.onended = function() {
+          icon.innerHTML = '&#9654;';
+          if (cardElement) cardElement.classList.remove('playing-border');
+          currentAudio = null;
+          currentIcon = null;
+          currentCard = null;
+        };
+      }
+    </script>
+
   </main>
 
   <footer class="site-footer container">

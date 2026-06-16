@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css?v=20260520-7">
   <script src="assets/js/main.js?v=20260520-7" defer></script>
 </head>
@@ -35,16 +36,214 @@
   </header>
 
   <main id="main-content">
-    <section class="page-placeholder">
-      <div class="container page-placeholder-shell">
-        <span class="eyebrow">Pakaian & Kuliner</span>
-        <h1 class="page-placeholder-title">Halaman ini sedang dalam <span>persiapan</span>.</h1>
-        <p class="lead">Konten pakaian dan kuliner akan dipasang di sini. Sementara ini, kembali ke beranda untuk menjelajah pilar budaya lainnya.</p>
-        <div class="button-row">
-          <a class="button" href="index.html">Kembali ke beranda</a>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    
+    <style>
+      .font-serif { font-family: 'Cormorant Garamond', serif; }
+      .carousel-item img { height: 500px; object-fit: cover; }
+      .carousel-caption {
+        background: linear-gradient(to top, rgba(26,34,45,0.95) 0%, rgba(26,34,45,0.7) 70%, transparent 100%);
+        bottom: 0; left: 0; right: 0; padding: 40px 40px 20px; text-align: left;
+      }
+      .custom-border-left { border-left: 4px solid #A33B3B; }
+      .carousel-control-prev-icon, .carousel-control-next-icon {
+        background-color: rgba(26,34,45,0.8); border-radius: 50%; padding: 20px;
+      }
+      
+    </style>
+
+    <div class="container py-5" style="max-width: 1000px;">
+      
+      <div class="text-center mb-5">
+        <span class="d-inline-block fw-bold" style="color: #A33B3B; letter-spacing: 2px;">和服と食</span>
+        <h1 class="font-serif mt-2 mb-3 display-4 fw-bold" style="color: #1A222D;">Pakaian & Kuliner</h1>
+        <p class="lead mx-auto text-secondary" style="max-width: 700px; font-size: 1.1rem;">
+          Jelajahi dua pilar identitas budaya Jepang: keanggunan busana tradisional yang tak lekang oleh zaman dan mahakarya gastronomi yang memanjakan indera.
+        </p>
+      </div>
+
+      <div class="mb-5 pb-4">
+        <div class="custom-border-left ps-3 mb-4">
+          <h2 class="font-serif fw-bold m-0" style="color: #1A222D;">Wafuku: Seni Berbusana</h2>
+          <p>Mencerminkan status, usia, dan musim melalui helai kain.</p>
+        </div>
+        
+        <div id="sliderPakaian" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/images/Demon-Slayer-Third-Anniversary-Festival.avif" class="d-block w-100" alt="Kimono">
+              <div class="carousel-item-caption carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">1. Kimono</h3>
+                <p class="text-light">Pakaian tradisional Jepang yang paling ikonik. Memiliki potongan lurus seperti jubah panjang dan diikat dengan sabuk lebar (obi). Dipakai untuk acara formal seperti pernikahan atau upacara minum teh.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/girls-in-yukata-v0-mtz2gr6wdj3a1.webp" class="d-block w-100" alt="Yukata">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">2. Yukata</h3>
+                <p class="text-light">Versi kasual dari kimono yang terbuat dari bahan katun tipis. Sangat populer dipakai saat musim panas, terutama saat menghadiri festival (matsuri) atau melihat kembang api.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/optimize-image.webp" class="d-block w-100" alt="Hakama">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">3. Hakama</h3>
+                <p class="text-light">Pakaian menyerupai rok berlipit lebar atau celana kulot panjang yang dipakai di luar kimono. Biasanya dikenakan oleh pria, wanita saat wisuda, atau praktisi seni bela diri.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/obxMqn.jpg" class="d-block w-100" alt="Haori">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">4. Haori</h3>
+                <p class="text-light">Jaket atau mantel sepanjang pinggul hingga paha yang dikenakan sebagai luaran kimono untuk memberikan kehangatan atau menambah kesan formal.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/jinbei.png" class="d-block w-100" alt="Jinbei">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">5. Jinbei</h3>
+                <p class="text-light">Pakaian santai musim panas yang terdiri dari setelan atasan berlengan pendek dan celana pendek. Biasanya terbuat dari katun atau rami dan sering dipakai di rumah.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/f51ecdcd-65ac-441c-91e7-051efc3d06a0.jpg" class="d-block w-100" alt="Happi">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">6. Happi</h3>
+                <p class="text-light">Mantel katun tradisional dengan lengan lurus yang biasanya menampilkan lambang keluarga atau logo festival di punggung. Sering dipakai oleh peserta festival.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/samue.jpg" class="d-block w-100" alt="Samue">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">7. Samue</h3>
+                <p class="text-light">Pakaian kerja tradisional yang aslinya dipakai oleh biksu Zen Jepang saat melakukan pekerjaan sehari-hari. Terdiri dari atasan dan celana panjang yang longgar.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/uchikake.webp" class="d-block w-100" alt="Uchikake">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">8. Uchikake</h3>
+                <p class="text-light">Kimono luar yang sangat formal, tebal, dan menjuntai panjang ke lantai. Pakaian ini khusus digunakan oleh pengantin wanita dalam upacara pernikahan tradisional.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/furisode.webp" class="d-block w-100" alt="Furisode">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">9. Furisode</h3>
+                <p class="text-light">Jenis kimono paling formal untuk wanita muda yang belum menikah. Ciri khas utamanya adalah bagian lengan yang sangat panjang dan menjuntai hingga ke pergelangan kaki.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/hanten.jpg" class="d-block w-100" alt="Hanten">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">10. Hanten</h3>
+                <p class="text-light">Jaket musim dingin tradisional yang berlapis kapas di bagian dalamnya. Pakaian ini dikenakan oleh masyarakat umum pada zaman Edo untuk menahan udara dingin.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#sliderPakaian" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#sliderPakaian" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-    </section>
+
+      <div class="mb-5 pb-4">
+        <div class="custom-border-left ps-3 mb-4">
+          <h2 class="font-serif fw-bold m-0" style="color: #1A222D;">Washoku: Harmoni Rasa</h2>
+          <p>Keseimbangan antara estetika visual dan kesegaran bahan alam.</p>
+        </div>
+        
+        <div id="sliderKuliner" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=1200&q=80" class="d-block w-100" alt="Sushi">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">1. Sushi</h3>
+                <p class="text-light">Hidangan yang terbuat dari nasi yang dicampur cuka ringan, kemudian disajikan dengan berbagai makanan laut segar (seperti ikan salmon atau tuna mentah) dan telur.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.unsplash.com/photo-1552611052-33e04de081de?w=1200&q=80" class="d-block w-100" alt="Ramen">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">2. Ramen</h3>
+                <p class="text-light">Mi kuah khas Jepang yang disajikan dalam berbagai jenis kaldu (shoyu, miso, tonkotsu), lengkap dengan topping irisan daging, daun bawang, rumput laut, dan telur rebus.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/sasimi.webp" class="d-block w-100" alt="Sashimi">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">3. Sashimi</h3>
+                <p class="text-light">Potongan tipis daging ikan laut atau makanan laut mentah lainnya yang sangat segar, dinikmati hanya dengan dicelupkan ke dalam kecap asin (shoyu) dan wasabi.</p>
+              </div>
+            </div>
+            <div class="assets/images/carousel-item">
+              <img src="takoyaki.jpg" class="d-block w-100" alt="Takoyaki">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">4. Takoyaki</h3>
+                <p class="text-light">Camilan bola kecil dari adonan tepung berisi potongan gurita (tako). Disajikan dengan saus takoyaki, mayones, bubuk rumput laut, dan serutan ikan cakalang kering.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/udon.png" class="d-block w-100" alt="Udon">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">5. Udon</h3>
+                <p class="text-light">Mi Jepang yang terbuat dari tepung terigu dengan bentuk yang tebal dan kenyal. Biasanya disajikan dalam kuah dashi (kaldu ikan) yang hangat dengan berbagai macam topping.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/tempura.jpg" class="d-block w-100" alt="Tempura">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">6. Tempura</h3>
+                <p class="text-light">Hidangan berupa sayuran segar atau makanan laut (paling sering udang) yang dibalut dengan adonan tepung ringan dan digoreng hingga sangat renyah.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/okonomiyaki.jpg" class="d-block w-100" alt="Okonomiyaki">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">7. Okonomiyaki</h3>
+                <p class="text-light">"Piza Jepang" atau panekuk gurih. Terbuat dari adonan tepung dan irisan kol, dicampur dengan berbagai bahan seperti daging atau makanan laut, lalu dipanggang di wajan datar.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/soba.webp" class="d-block w-100" alt="Soba">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">8. Soba</h3>
+                <p class="text-light">Mi tipis yang terbuat dari tepung gandum kuda (buckwheat), memberikan warna kecokelatan. Bisa disajikan panas dalam kaldu atau dingin dengan saus pencelup.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/yakitori.png" class="d-block w-100" alt="Yakitori">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">9. Yakitori</h3>
+                <p class="text-light">Sate khas Jepang berupa potongan daging ayam yang ditusuk bambu, dipanggang di atas arang dengan olesan saus manis gurih atau taburan garam.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/onigiri.jpg" class="d-block w-100" alt="Onigiri">
+              <div class="carousel-caption">
+                <h3 class="font-serif fw-bold h2 text-light">10. Onigiri</h3>
+                <p class="text-light">Nasi kepal Jepang yang dibentuk segitiga atau oval, biasanya dibungkus dengan nori (rumput laut kering) dan diisi dengan salmon panggang, tuna mayo, atau umeboshi.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#sliderKuliner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#sliderKuliner" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+    
   </main>
 
   <footer class="site-footer container">
@@ -65,5 +264,6 @@
       <span>&copy; <span data-current-year></span> Project: NIPPON</span>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
