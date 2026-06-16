@@ -5,12 +5,9 @@
   const $$ = (sel, scope = document) => Array.from(scope.querySelectorAll(sel));
 
   function initNav() {
-    const toggle = $(".nav-orb") || $("[data-nav-toggle]") || $(".nav-toggle");
+    const toggle = $(".nav-orb");
     const nav = $("[data-nav]");
-    const page =
-      document.body.dataset.page ||
-      window.location.pathname.split("/").pop().replace(/\.html$/, "") ||
-      "home";
+    const page = document.body.dataset.page || "home";
 
     $$("[data-nav] .nav-link").forEach((link) => {
       if (link.dataset.page === page) {
@@ -21,20 +18,12 @@
 
     if (!toggle || !nav) return;
 
-    const isLinkToggle = toggle.tagName === "A";
-    if (isLinkToggle) {
-      toggle.setAttribute("href", "#");
-      toggle.setAttribute("role", "button");
-      toggle.setAttribute("aria-label", "Buka navigasi");
-    }
-
     const setOpen = (open) => {
       document.body.classList.toggle("nav-open", open);
       toggle.setAttribute("aria-expanded", String(open));
     };
 
-    toggle.addEventListener("click", (event) => {
-      if (isLinkToggle) event.preventDefault();
+    toggle.addEventListener("click", () => {
       setOpen(!document.body.classList.contains("nav-open"));
     });
     nav.addEventListener("click", (e) => {
@@ -78,7 +67,5 @@
   document.addEventListener("DOMContentLoaded", () => {
     initNav();
     initRegionCarousel();
-    const year = $("[data-current-year]");
-    if (year) year.textContent = new Date().getFullYear();
   });
 })();

@@ -242,7 +242,7 @@ h3 { font-size: 1.3rem; font-weight: 600; line-height: 1.2; }
   border-color: var(--ink);
   color: var(--ink);
   font-size: 0.84rem;
-  margin-top: 0.4rem;
+  margin-top: auto;
 }
 .preview-card-link:hover { color: #fff; background: var(--ink); transform: translateY(-2px); }
 .button-row { display: flex; flex-wrap: wrap; gap: 0.7rem; }
@@ -340,6 +340,8 @@ h3 { font-size: 1.3rem; font-weight: 600; line-height: 1.2; }
 .stats-grid { grid-template-columns: repeat(2, 1fr); }
 
 .card {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
@@ -363,7 +365,13 @@ h3 { font-size: 1.3rem; font-weight: 600; line-height: 1.2; }
   transition: transform 0.3s ease;
 }
 .card:hover .card-media img { transform: scale(1.03); }
-.card-body { display: grid; gap: 0.6rem; padding: 1rem; }
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 0.6rem;
+  padding: 1rem;
+}
 .card-body h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; }
 .card-body p { font-size: 0.9rem; line-height: 1.6; }
 
