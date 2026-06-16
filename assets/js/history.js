@@ -34,6 +34,7 @@ fetch('assets/data/history.json')
 
         $('[data-periode]').hide();
         $(`[data-periode="${data.yearRanges[0].label}"]`).show();
+        $('#contentArea').addClass(data.yearRanges[0].mood);
 
         $('#historyDropdown').on('change', function() {
             let chosen = $(this).val();

@@ -56,6 +56,13 @@
   width: 100%;
 }
 
+.main-title {
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
 #contentArea.dark { background: #11243f; }
 #contentArea.positive { background: #e8c98a; }
 #contentArea.negative { background: #7a2b22; }

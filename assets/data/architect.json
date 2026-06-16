@@ -1,0 +1,92 @@
+[
+    {
+      "id": "japanese-castle",
+      "title": "Kastel Jepang",
+      "romaji": "Shiro",
+      "kanji": "城",
+      "category": "Arsitektur Militer",
+      "shortDescription": "Bukan sekadar benteng pertahanan biasa, kastel Jepang dirancang megah untuk memamerkan kekayaan dan kekuasaan para Daimyo (tuan tanah) pada era feodal dengan menara yang menjulang tinggi.",
+      "keyFeatures": [
+        "Fondasi batu raksasa miring yang disusun tanpa semen (Ishigaki)",
+        "Menara utama bertingkat-tingkat sebagai pusat komando (Tenshu)",
+        "Parit luas dan koridor labirin untuk menjebak musuh"
+      ],
+      "iconicExample": "Kastel Himeji (Prefektur Hyogo)",
+      "imageUrl": "assets/images/kastiljp.jpg"
+    },
+    {
+      "id": "shinto-shrine",
+      "title": "Kuil Shinto",
+      "romaji": "Jinja",
+      "kanji": "神社",
+      "category": "Arsitektur Religi",
+      "shortDescription": "Tempat ibadah agama asli Jepang, Shinto. Arsitekturnya sangat menghormati alam sekitar, ditandai dengan gerbang merah ikonik yang memisahkan dunia manusia dengan dunia roh.",
+      "keyFeatures": [
+        "Gerbang masuk ikonik berwarna merah/oranye (Torii)",
+        "Tali jerami besar penanda area suci (Shimenawa)",
+        "Gaya bangunan kayu alami tanpa cat yang menyatu dengan hutan sekitar"
+      ],
+      "iconicExample": "Kuil Fushimi Inari-Taisha (Kyoto)",
+      "imageUrl": "assets/images/kuilshin.jpg"
+    },
+    {
+      "id": "buddhist-temple",
+      "title": "Kuil Buddha",
+      "romaji": "Tera / Ji",
+      "kanji": "寺",
+      "category": "Arsitektur Religi",
+      "shortDescription": "Diadopsi dari Asia Daratan (Tiongkok dan Korea), kuil Buddha Jepang memiliki ciri khas atap genteng yang sangat besar, melengkung megah, serta struktur pagoda bertingkat.",
+      "keyFeatures": [
+        "Menara bertingkat penstrukturan relik suci (Pagoda/To)",
+        "Gerbang masuk besar dengan patung penjaga raksasa (Sanmon)",
+        "Sistem penyangga kayu kompleks tanpa paku untuk menahan gempa (Tokyo/Brackets)"
+      ],
+      "iconicExample": "Kuil Senso-ji (Asakusa, Tokyo)",
+      "imageUrl": "assets/images/kuilbd.jpg"
+    },
+    {
+      "id": "traditional-house",
+      "title": "Rumah Tradisional",
+      "romaji": "Minka",
+      "kanji": "民家",
+      "category": "Arsitektur Hunian",
+      "shortDescription": "Rumah panggung kayu tradisional yang dibangun oleh rakyat jelata, petani, maupun samurai. Memiliki fleksibilitas ruang yang luar biasa untuk beradaptasi dengan empat musim.",
+      "keyFeatures": [
+        "Lantai anyaman jerami sebagai standar ukuran ruangan (Tatami)",
+        "Pintu geser kayu dengan kertas tembus cahaya (Shoji/Fusuma)",
+        "Atap jerami tebal miring curam untuk daerah bersalju (Gassho-zukuri)"
+      ],
+      "iconicExample": "Desa Tradisional Shirakawa-go (Prefektur Gifu)",
+      "imageUrl": "assets/images/tradhouse.jpg"
+    },
+    {
+      "id": "tea-house",
+      "title": "Rumah Teh",
+      "romaji": "Chashitsu",
+      "kanji": "茶室",
+      "category": "Arsitektur Budaya",
+      "shortDescription": "Struktur bangunan kecil yang dirancang khusus untuk Upacara Minum Teh (Chado). Mengusung konsep Wabi-Sabi, yaitu keindahan dalam kesederhanaan, ketenangan, dan ketidaksempurnaan.",
+      "keyFeatures": [
+        "Pintu masuk sangat rendah yang memaksa tamu merangkak sebagai simbol kesetaraan (Nijiriguchi)",
+        "Area pajangan lukisan gulung atau siluet bunga musiman (Tokonoma)",
+        "Material interior yang sangat mentah dan alami seperti bambu, tanah liat, dan kayu kasar"
+      ],
+      "iconicExample": "Kedai Teh Tai-an (Prefektur Kyoto)",
+      "imageUrl": "assets/images/tea.jpg"
+    },
+    {
+      "id": "modern-architecture",
+      "title": "Arsitektur Modern & Kontemporer",
+      "romaji": "Gendai Kenchiku",
+      "kanji": "現代建築",
+      "category": "Arsitektur Modern",
+      "shortDescription": "Perpaduan pasca-perang antara teknologi beton/baja barat dengan filosofi ruang tradisional Jepang (seperti Zen dan Minimalisme). Menghasilkan bangunan futuristik namun tetap tenang.",
+      "keyFeatures": [
+        "Penggunaan beton ekspos halus (karakteristik Tadao Ando)",
+        "Konsep ruang terbuka yang memanfaatkan cahaya alami secara maksimal",
+        "Desain minimalis bergaris tegas yang fungsional"
+      ],
+      "iconicExample": "Gereja Cahaya / Church of the Light (Ibaraki, Osaka)",
+      "imageUrl": "assets/images/arsimo.jpg"
+    }
+]
