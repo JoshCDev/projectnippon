@@ -405,14 +405,14 @@ h3 { font-size: 1.3rem; font-weight: 600; line-height: 1.2; }
   overflow: hidden;
 }
 .panel-body { display: grid; gap: 1rem; padding: 1.2rem; }
-.story-list, .fact-list { display: grid; gap: 0.6rem; padding-left: 0; list-style: none; }
-.story-list li, .fact-list li {
+.fact-list { display: grid; gap: 0.6rem; padding-left: 0; list-style: none; }
+.fact-list li {
   padding-left: 1rem;
   color: var(--ink-light);
   line-height: 1.5;
   position: relative;
 }
-.story-list li::before, .fact-list li::before {
+.fact-list li::before {
   content: '';
   position: absolute;
   left: 0; top: 0.65em;
@@ -553,21 +553,7 @@ h3 { font-size: 1.3rem; font-weight: 600; line-height: 1.2; }
   background: rgba(155, 58, 77, 0.05);
 }
 
-.page-placeholder {
-  display: grid;
-  align-items: center;
-  min-height: calc(100vh - var(--header-height) - 16rem);
-  padding: 4rem 0;
-}
-.page-placeholder-shell { display: grid; gap: 1rem; max-width: 42rem; }
-.page-placeholder-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.1;
-}
-.page-placeholder-title span { color: var(--seal); font-style: italic; }
-.page-placeholder .button-row { margin-top: 0.5rem; }
+
 
 @media (min-width: 480px) {
   .pillar-grid { grid-template-columns: repeat(3, 1fr); }

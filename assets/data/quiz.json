@@ -2,123 +2,123 @@
   "questions": [
     {
       "question": "Apa nama seni kaligrafi Jepang?",
-      "choices": ["Origami", "Shodo", "Ikebana", "Kabuki"],
+      "choices": ["Origami", "Shodō", "Ikebana", "Kabuki"],
       "answer": 1,
-      "note": "Shodo adalah seni menulis indah dengan kuas dan tinta."
+      "note": "Shodō adalah seni menulis indah menggunakan kuas dan tinta khusus."
     },
     {
-      "question": "Kimono biasanya dipakai dalam suasana apa?",
-      "choices": ["Acara formal", "Olahraga", "Tidur", "Memasak cepat"],
+      "question": "Kimono biasanya dikenakan pada momen seperti apa?",
+      "choices": ["Acara formal atau perayaan tradisional", "Olahraga ringan", "Tidur sehari-hari", "Memasak di dapur"],
       "answer": 0,
-      "note": "Kimono sering dipakai dalam acara resmi atau perayaan tradisional."
+      "note": "Kimono adalah pakaian tradisional formal yang sering dipakai untuk pernikahan atau upacara minum teh."
     },
     {
-      "question": "Yukata paling sering dipakai pada musim apa?",
+      "question": "Yukata paling populer dikenakan pada musim apa?",
       "choices": ["Musim dingin", "Musim panas", "Musim gugur", "Musim hujan"],
       "answer": 1,
-      "note": "Yukata ringan dan sering dipakai saat festival musim panas."
+      "note": "Yukata adalah jubah katun tipis yang kasual, sangat populer dikenakan saat festival musim panas (matsuri)."
     },
     {
       "question": "Alat musik drum besar Jepang disebut apa?",
       "choices": ["Koto", "Taiko", "Shamisen", "Biwa"],
       "answer": 1,
-      "note": "Taiko adalah drum besar yang sering muncul dalam festival."
+      "note": "Taiko adalah drum besar khas Jepang yang menghasilkan ketukan ritmis pemompa semangat di festival."
     },
     {
       "question": "Shamisen memiliki berapa senar?",
-      "choices": ["Dua", "Tiga", "Empat", "Lima"],
-      "answer": 1,
-      "note": "Shamisen adalah alat musik petik dengan tiga senar."
+      "choices": ["Satu senar", "Dua senar", "Tiga senar", "Empat senar"],
+      "answer": 2,
+      "note": "Shamisen adalah instrumen dawai tradisional Jepang yang dimainkan dengan cara dipetik dan memiliki tiga senar."
     },
     {
       "question": "Ukiyo-e dikenal sebagai seni apa?",
-      "choices": ["Cetakan kayu", "Anyaman bambu", "Patung perunggu", "Lukisan kaca"],
+      "choices": ["Seni cukil kayu (cetak blok)", "Seni anyaman bambu", "Seni patung perunggu", "Seni lukis kaca"],
       "answer": 0,
-      "note": "Ukiyo-e adalah seni cetak kayu yang populer pada zaman Edo."
+      "note": "Ukiyo-e adalah seni cukil kayu (cetak blok kayu) tradisional yang berkembang pesat pada zaman Edo."
     },
     {
       "question": "Hanami adalah tradisi menikmati apa?",
-      "choices": ["Salju", "Bunga sakura", "Kembang api", "Panen padi"],
+      "choices": ["Menikmati guguran salju", "Menikmati mekarnya bunga sakura", "Menonton pesta kembang api", "Merayakan panen padi"],
       "answer": 1,
-      "note": "Hanami berarti menikmati bunga, terutama sakura pada musim semi."
+      "note": "Hanami adalah tradisi berkumpul bersama untuk menikmati keindahan mekarnya bunga sakura di musim semi."
     },
     {
       "question": "Matsuri berarti apa?",
       "choices": ["Festival", "Istana", "Sekolah", "Jalan kota"],
       "answer": 0,
-      "note": "Matsuri adalah festival atau perayaan lokal di Jepang."
+      "note": "Matsuri adalah festival atau perayaan rakyat lokal yang diadakan di Jepang."
     },
     {
       "question": "Tatami adalah bagian dari rumah yang berupa apa?",
-      "choices": ["Atap", "Pintu besi", "Matras lantai", "Lampu taman"],
+      "choices": ["Genteng atap kuil", "Rangka pintu geser", "Lantai anyaman jerami", "Lentera taman batu"],
       "answer": 2,
-      "note": "Tatami adalah matras lantai tradisional dari jerami."
+      "note": "Tatami adalah lantai tradisional Jepang berupa tikar yang dibuat dari anyaman jerami tebal."
     },
     {
       "question": "Shoji biasanya terbuat dari rangka kayu dan apa?",
-      "choices": ["Kertas", "Batu", "Logam", "Kaca tebal"],
+      "choices": ["Kertas tembus cahaya", "Batu alam", "Lempengan besi", "Kaca tebal"],
       "answer": 0,
-      "note": "Shoji memakai kertas untuk menyaring cahaya dengan lembut."
+      "note": "Shoji adalah pintu atau sekat geser tradisional terbuat dari rangka kayu dan kertas tembus cahaya yang berfungsi menyaring sinar matahari dengan lembut."
     },
     {
       "question": "Engawa berada di antara bagian apa?",
       "choices": ["Dapur dan gudang", "Ruang dalam dan taman", "Atap dan langit-langit", "Gerbang dan jalan"],
       "answer": 1,
-      "note": "Engawa adalah serambi yang menghubungkan ruang dalam dengan taman."
+      "note": "Engawa adalah lorong berlantai kayu yang berfungsi sebagai serambi penghubung antara ruang dalam rumah dengan taman luar."
     },
     {
       "question": "Miso dibuat dari fermentasi bahan utama apa?",
-      "choices": ["Kedelai", "Jagung", "Kentang", "Kelapa"],
+      "choices": ["Kedelai", "Beras merah", "Lobak putih", "Ubi jalar"],
       "answer": 0,
-      "note": "Miso dibuat dari kedelai yang difermentasi."
+      "note": "Miso adalah bahan masakan berupa pasta kental hasil fermentasi kedelai."
     },
     {
       "question": "Sushi menonjolkan perpaduan nasi dengan apa?",
-      "choices": ["Roti", "Ikan atau hasil laut", "Keju", "Daging asap"],
+      "choices": ["Roti gandum", "Makanan laut segar", "Keju olahan", "Daging asap"],
       "answer": 1,
-      "note": "Sushi biasanya memadukan nasi berbumbu dengan ikan atau hasil laut."
+      "note": "Sushi adalah hidangan nasi bercuka ringan yang disajikan bersama makanan laut segar, telur, atau sayuran."
     },
     {
       "question": "Ramen adalah makanan berupa apa?",
-      "choices": ["Sup mie", "Kue beras", "Teh hijau", "Acar sayur"],
+      "choices": ["Hidangan mi kuah", "Kue beras manis", "Seduhan teh hijau", "Acar sayuran asam"],
       "answer": 0,
-      "note": "Ramen adalah hidangan mie dengan kuah dan topping."
+      "note": "Ramen adalah hidangan mi kuah khas Jepang yang disajikan dalam berbagai pilihan kaldu gurih dan aneka topping."
     },
     {
       "question": "Periode Edo dimulai pada tahun berapa?",
       "choices": ["794", "1185", "1603", "1868"],
       "answer": 2,
-      "note": "Periode Edo dimulai saat Tokugawa Ieyasu menjadi shogun pada 1603."
+      "note": "Periode Edo (1603-1868) dimulai ketika Tokugawa Ieyasu resmi diangkat menjadi Shogun pertama dan mendirikan pusat pemerintahan di Edo (Tokyo)."
     },
     {
       "question": "Restorasi Meiji dimulai pada tahun berapa?",
       "choices": ["1603", "1868", "1945", "2019"],
       "answer": 1,
-      "note": "Restorasi Meiji dimulai pada 1868."
+      "note": "Restorasi Meiji yang menandai kembalinya kekuasaan ke tangan kaisar dan modernisasi Jepang dimulai pada tahun 1868."
     },
     {
       "question": "Kota Kyoto dahulu dikenal sebagai pusat budaya periode apa?",
       "choices": ["Heian", "Reiwa", "Jomon", "Showa"],
       "answer": 0,
-      "note": "Heian-kyo, yang kemudian dikenal sebagai Kyoto, menjadi pusat budaya Heian."
+      "note": "Heian-kyo (yang sekarang menjadi Kyoto) didirikan sebagai ibu kota pada tahun 794 dan menjadi pusat keemasan budaya istana Heian."
     },
     {
       "question": "Ikebana adalah seni apa?",
       "choices": ["Merangkai bunga", "Membuat pedang", "Membuat mie", "Menulis sejarah"],
       "answer": 0,
-      "note": "Ikebana adalah seni merangkai bunga dengan komposisi yang teratur."
+      "note": "Ikebana adalah seni merangkai bunga tradisional Jepang yang menekankan pada harmoni garis, warna, dan keseimbangan alam."
     },
     {
       "question": "Kabuki dikenal sebagai bentuk seni apa?",
       "choices": ["Teater", "Makanan", "Pakaian", "Rumah"],
       "answer": 0,
-      "note": "Kabuki adalah teater tradisional dengan kostum dan rias yang kuat."
+      "note": "Kabuki adalah seni teater tari tradisional Jepang yang terkenal dengan riasan wajah yang mencolok dan kostum yang mewah."
     },
     {
       "question": "Noh sering memakai properti penting berupa apa?",
       "choices": ["Topeng", "Sepeda", "Payung plastik", "Bola"],
       "answer": 0,
-      "note": "Teater Noh terkenal dengan penggunaan topeng dan gerak yang lambat."
+      "note": "Teater Noh adalah seni drama musikal klasik yang terkenal dengan penggunaan topeng kayu peraga dan gerakan panggung yang sangat lambat."
     }
   ]
 }
