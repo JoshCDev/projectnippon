@@ -1544,33 +1544,6 @@
     );
   }
 
-  if (!window.NIPPON_HISTORY) window.NIPPON_HISTORY = {};
-  window.NIPPON_HISTORY.APP_VERSION = APP_VERSION;
-  window.NIPPON_HISTORY.HISTORY_STORAGE_KEY = HISTORY_STORAGE_KEY;
-  window.NIPPON_HISTORY.saveSelectionToStorage = saveSelectionToStorage;
-  window.NIPPON_HISTORY.loadSelectionFromStorage = loadSelectionFromStorage;
-  window.NIPPON_HISTORY.HISTORY_LOAD_ERROR_FALLBACK = HISTORY_LOAD_ERROR_FALLBACK;
-  window.NIPPON_HISTORY.HISTORY_DATA_PATH = HISTORY_DATA_PATH;
-  window.NIPPON_HISTORY.loadHistoryJSON = loadHistoryJSON;
-  window.NIPPON_HISTORY.HistoryDataLoader = HistoryDataLoader;
-  window.NIPPON_HISTORY.validateHistoryData = validateHistoryData;
-  window.NIPPON_HISTORY.normalizeHistoryEvent = normalizeHistoryEvent;
-  window.NIPPON_HISTORY.markersFor = markersFor;
-  window.NIPPON_HISTORY.eventsAt = eventsAt;
-  window.NIPPON_HISTORY.eventsForYearRange = eventsForYearRange;
-  window.NIPPON_HISTORY.formatMarkerLabel = formatMarkerLabel;
-  window.NIPPON_HISTORY.resolveMood = resolveMood;
-  window.NIPPON_HISTORY.defaultSelection = defaultSelection;
-  window.NIPPON_HISTORY.snapToNearest = snapToNearest;
-  window.NIPPON_HISTORY.createHistoryState = createHistoryState;
-  window.NIPPON_HISTORY.TimelineBar = TimelineBar;
-  window.NIPPON_HISTORY.ContentPanel = ContentPanel;
-  window.NIPPON_HISTORY.BackgroundAnimator = BackgroundAnimator;
-  window.NIPPON_HISTORY.HISTORY_TOTAL_DURATION = TOTAL_DURATION;
-  window.NIPPON_HISTORY.HISTORY_PHASE1_DURATION = PHASE1_DURATION;
-  window.NIPPON_HISTORY.HISTORY_PHASE2_DURATION = PHASE2_DURATION;
-  window.NIPPON_HISTORY.initHistoryPage = initHistoryPage;
-
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", initHistoryPage);
   } else {
