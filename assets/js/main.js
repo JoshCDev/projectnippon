@@ -35,6 +35,9 @@
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") setOpen(false);
     });
+    window.addEventListener("scroll", () => {
+      if (document.body.classList.contains("nav-open")) setOpen(false);
+    }, { passive: true });
     window.addEventListener("resize", () => {
       if (window.innerWidth >= 960) setOpen(false);
     });
