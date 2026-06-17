@@ -40,9 +40,18 @@
     $("[data-quiz-feedback]").removeAttribute("data-status");
     $("[data-quiz-next]").style.display = "none";
 
+    var options = q.choices.map(function (choice, index) {
+      return { text: choice, value: index };
+    });
+    for (i = options.length - 1; i > 0; i--) {
+      var swap = Math.floor(Math.random() * (i + 1));
+      var tmp = options[i];
+      options[i] = options[swap];
+      options[swap] = tmp;
+    }
     var html = "";
-    for (i = 0; i < q.choices.length; i++) {
-      html += "<label class=\"quiz-option\"><input type=\"radio\" name=\"answer\" value=\"" + i + "\"><span>" + q.choices[i] + "</span></label>";
+    for (i = 0; i < options.length; i++) {
+      html += "<label class=\"quiz-option\"><input type=\"radio\" name=\"answer\" value=\"" + options[i].value + "\"><span>" + options[i].text + "</span></label>";
     }
     $("[data-quiz-options]").innerHTML = html;
   }
